@@ -1,6 +1,6 @@
-#cottagegrid {
+.cottagegrid {
     display:grid;
-    grid-template-columns: repeat(3, 10%);
+    grid-template-columns: repeat(3, 20%);
     column-gap: 20px;
     row-gap:20px;
     justify-content: center;
@@ -9,62 +9,207 @@
 }
 .tile {
     border:solid red;
-    height:200px;
-    width:200px;
+    height:300px;
+    width:300px;
+    color:white;
+  
 
 }
 
 #thelodge{
-background-image: url("Lodge4.jpg") ;
+background-image: url("images/Lodge4.jpg") ;
 }
 #sunrisesuite{
-    background-image:url("sunrisesuite.jpg") ;
+    background-image:url("images/sunrisesuite.jpg") ;
 
 }
 #cottageone{
-    background-image: url("cottageone.jpg") ;
+    background-image: url("images/cottageone.jpg") ;
 
 }
 #cottagetwo{
-    background-image: url("Cottage2.jpg") ;
+    background-image: url("images/Cottage2.jpg") ;
 
 }
 #cottagethree{
-    background-image: url("Cottage3.jpg") ;
+    background-image: url("images/Cottage3.jpg") ;
 
 }
 #cottagefour{
-    background-image: url("cottage4.jpg") ;
+    background-image: url("images/cottage4.jpg") ;
 
 }
 #cottagefive{
-    background-image: url("cottage5.jpg") ;
+    background-image: url("images/cottage5.jpg") ;
 
 }
 #cottagesix{
-    background-image: url("Cottage6.jpg") ;
+    background-image: url("images/Cottage6.jpg") ;
 
 }
 #cottageseven{
-    background-image: url("Cottage7.jpg") ;
+    background-image: url("images/Cottage7.jpg") ;
 
 }
 #moteleight{
-    background-image: url("Motel-8.jpg") ;
+    background-image: url("images/Motel-8.jpg") ;
+    background-size:100% 100%;
 
 }
 #motelnine{
-    background-image: url("Motel9.jpg") ;
-
+    background-image: url("images/Motel9.jpg") ;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
 }
 #motelten{
-    background-image: url("Motel-10.jpg") ;
+    background-image: url("images/motel-units-8-9-10.jpg") ;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
 
 }
 
 #header {
     height:1000px;
-    object-position: bottom;
-    background-image: url('sandyshores.jpg');
-    background-repeat: no-repeat;
+    width:100%;
+    background-position: 25% 60%;
+    background-image: url('images/sandyshores.jpg');
+    font-family: 'Work Sans', sans-serif; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border:solid red;
+    color:white;
+
 }
+
+h1 {
+    font-family: 'Cabin Sketch', cursive;    
+    color:white;
+    font-size:9rem;
+    margin-top:7%;
+    margin:0px;
+}
+
+#booknow{
+    font-family: 'Work Sans';
+    font-weight:900;
+    font-size: 40px;
+    height:100px;
+    width:500px;
+    border-radius: 20px;
+    border: solid white;
+    background:transparent;
+    color:white;
+    flex-wrap: wrap;
+
+}
+#navigation {
+    list-style: none;
+    color:white;
+    display: flex;
+    font-size:30px;
+border:solid blue;
+gap:25px;
+justify-content: space-between;
+margin-bottom: 200px;
+font-weight: 900;
+}
+ul {
+            padding-left:0px;
+            margin-top:0px;
+}
+li{
+    display: flex;
+
+
+
+}
+
+nav {
+    width:100%;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #header{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+    }
+  h1 {
+    font-size:40px;
+        font-family: 'Work Sans', cursive;    
+
+  }
+
+  #booknow {
+    height:50px;
+    width:100px;
+    font-size:15px;
+  }
+#gridwrapper {
+    display:flex;
+    flex-direction: column;
+        width:100%;
+}
+
+.cottagegrid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#frontdescription {
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    width:100%;
+}
+    #words {
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+img {
+    width:100%;
+}
+
+}
+
+    
+
+    #gridwrapper {
+        background-color: gray;
+        font-family: 'Work Sans';
+    }
+
+    #frontdescription {
+        display: flex;
+        font-family:'Work Sans' ;
+    }
+
+ #words {
+    display: flex;
+    flex-direction: column;
+    margin-left:20px;
+ }
+
+ #resort {
+    font-weight:900;
+    font-size:3rem;
+ }
+ 
+ #escanaba {
+    font-size:30px;
+ }
+
+ .description {
+    list-style: none;
+ }
+
+ h4{
+    margin:0px;
+ }
