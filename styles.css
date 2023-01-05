@@ -1,0 +1,70 @@
+#cottagegrid {
+    display:grid;
+    grid-template-columns: repeat(3, 10%);
+    column-gap: 20px;
+    row-gap:20px;
+    justify-content: center;
+
+
+}
+.tile {
+    border:solid red;
+    height:200px;
+    width:200px;
+
+}
+
+#thelodge{
+background-image: url("Lodge4.jpg") ;
+}
+#sunrisesuite{
+    background-image:url("sunrisesuite.jpg") ;
+
+}
+#cottageone{
+    background-image: url("cottageone.jpg") ;
+
+}
+#cottagetwo{
+    background-image: url("Cottage2.jpg") ;
+
+}
+#cottagethree{
+    background-image: url("Cottage3.jpg") ;
+
+}
+#cottagefour{
+    background-image: url("cottage4.jpg") ;
+
+}
+#cottagefive{
+    background-image: url("cottage5.jpg") ;
+
+}
+#cottagesix{
+    background-image: url("Cottage6.jpg") ;
+
+}
+#cottageseven{
+    background-image: url("Cottage7.jpg") ;
+
+}
+#moteleight{
+    background-image: url("Motel-8.jpg") ;
+
+}
+#motelnine{
+    background-image: url("Motel9.jpg") ;
+
+}
+#motelten{
+    background-image: url("Motel-10.jpg") ;
+
+}
+
+#header {
+    height:1000px;
+    object-position: bottom;
+    background-image: url('sandyshores.jpg');
+    background-repeat: no-repeat;
+}
