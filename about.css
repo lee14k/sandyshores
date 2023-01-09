@@ -19,7 +19,9 @@ p {
 }
 
 h1 {
-    font-size:4rem;
+    color:black;
+    font-size:3rem;
+    font-family: 'Work Sans';
 }
 
 h2 {
@@ -95,4 +97,18 @@ h3 {
 #policies  {
     display:grid;
     grid-template-columns: repeat(4, 20%);
+}
+
+#about {
+    display:flex;
+    flex-direction: column;
+
+}
+
+#owners {
+    flex-basis:40%;
+}
+
+#aboutwrapper {
+    display: flex;
 }

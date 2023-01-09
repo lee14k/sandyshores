@@ -8,6 +8,30 @@
 
 }
 
+#mapper {
+    font-size:5rem;
+}
+
+
+#mapwrapper {
+    background: rgb(122,117,116);
+    gap:20px;
+    display:flex;
+    padding-bottom:100px;
+    padding-left:20px;
+    padding-top:30px;
+}
+
+#map {
+    display:flex;
+    flex-direction: column;
+    flex-basis:65%;
+    font-family: 'Work Sans';
+    align-items: center;
+    gap:20px;
+  
+}
+
 .tile {
     border:solid aqua;
     height:300px;
@@ -18,10 +42,11 @@
 
 #frontdescriptionwrapper {
 background: rgb(122,117,116);
-background: linear-gradient(180deg, rgba(122,117,116,1) 0%, rgba(125,165,158,1) 14%, rgba(127,214,201,1) 39%, rgba(127,214,201,1) 100%);
+background: linear-gradient(180deg, rgba(122,117,116,1) 0%, rgba(125,165,158,1) 14%, rgba(127,214,201,1) 39%,rgba(255,255,255,1) 100%);
 padding-bottom:50px;
 padding-top:50px;
 font-family: 'Work Sans';
+padding-bottom:100px;
 }
 
 
@@ -93,7 +118,7 @@ background-image: url("images/Lodge4.jpg") ;
 }
 
 h1 {
-    font-family: 'Cabin Sketch', cursive;    
+    font-family: 'Righteous', cursive;    
     color:white;
     font-size:9rem;
     margin-top:7%;
@@ -121,9 +146,9 @@ gap:50px;
 justify-content: space-between;
 margin-bottom: 400px;
 font-weight: 900;
-background: rgba(51, 170, 51, .4);   /*  40% opaque green */ 
+background: rgba(0, 30, 125, .4);   /*  40% opaque green */ 
 opacity:100%;
-color:black;
+color:white;
 flex-wrap: wrap;
 }
 ul {
@@ -146,8 +171,8 @@ nav {
     
 
     #gridwrapper {
-        background: rgb(127,214,201);
-        background: linear-gradient(180deg, rgba(127,214,201,1) 43%, rgba(89,255,147,1) 81%);
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 7%, rgba(163,255,239,1) 35%, rgba(166,255,163,1) 54%, rgba(166,255,163,1) 56%, rgba(255,255,255,1) 91%);
         font-family: 'Work Sans';
     }
 
@@ -162,7 +187,7 @@ nav {
     margin-left:20px;
  }
 
- #resort {
+ .resort {
     font-weight:900;
     font-size:3rem;
  }
@@ -199,12 +224,12 @@ display:flex;
 justify-content: space-evenly;
 font-family:'Work Sans';
 padding-top:60px;
-color:white;
+
 }
 
 footer {
-    background: rgb(89,255,147);
-background: linear-gradient(180deg, rgba(89,255,147,1) 0%, rgba(11,126,246,1) 62%);
+   color:black;
+
 }
 
 
@@ -294,6 +319,7 @@ a:active{
     
       }
     h2 {
+        font-size:20px;
         overflow-wrap:break-word;
       word-wrap: break-word;
     }
@@ -341,6 +367,40 @@ a:active{
         flex-direction: column;
     }
    
-    
+    #mapwrapper {
+        display:flex;
+        flex-direction: column;
+        max-width:300px;    }
+    #mapper {
+        font-size: 2rem;
+        max-width:300px; 
     }
 
+    #googlemaps{
+        width:200px;
+        height:400px;
+    }
+
+    }
+
+#words {
+    display: flex;
+    font-size:20px;
+    justify-content: center;
+}
+
+p{
+    margin:0px;
+}
+
+#price {
+margin-left:10px;
+margin-right:10px;
+font-size:20px;
+font-weight:900;
+}
+
+#googlemaps {
+    width:600px;
+    height:450px;
+}
