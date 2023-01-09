@@ -32,6 +32,11 @@
   
 }
 
+#googlemaps {
+    width:600px;
+    height:450px;
+}
+
 .tile {
     border:solid aqua;
     height:300px;
@@ -377,8 +382,8 @@ a:active{
     }
 
     #googlemaps{
-        width:50px;
-        height:50px;
+        width:150px;
+        height:250px;
     }
 
     }
@@ -400,7 +405,3 @@ font-size:20px;
 font-weight:900;
 }
 
-#googlemaps {
-    width:600px;
-    height:450px;
-}
