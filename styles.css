@@ -7,14 +7,23 @@
 
 
 }
+
 .tile {
-    border:solid red;
+    border:solid aqua;
     height:300px;
     width:300px;
     color:white;
-  
+    filter: drop-shadow(10px 10px 6px gray)
+  }
 
+#frontdescriptionwrapper {
+background: rgb(122,117,116);
+background: linear-gradient(180deg, rgba(122,117,116,1) 0%, rgba(125,165,158,1) 14%, rgba(127,214,201,1) 39%, rgba(127,214,201,1) 100%);
+padding-bottom:50px;
+padding-top:50px;
+font-family: 'Work Sans';
 }
+
 
 #thelodge{
 background-image: url("images/Lodge4.jpg") ;
@@ -79,7 +88,6 @@ background-image: url("images/Lodge4.jpg") ;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    border:solid red;
     color:white;
 
 }
@@ -107,14 +115,16 @@ h1 {
 }
 #navigation {
     list-style: none;
-    color:white;
-    display: flex;
+        display: flex;
     font-size:30px;
-border:solid blue;
-gap:25px;
+gap:50px;
 justify-content: space-between;
-margin-bottom: 200px;
+margin-bottom: 400px;
 font-weight: 900;
+background: rgba(51, 170, 51, .4);   /*  40% opaque green */ 
+opacity:100%;
+color:black;
+flex-wrap: wrap;
 }
 ul {
             padding-left:0px;
@@ -131,58 +141,13 @@ nav {
     width:100%;
 }
 
-@media screen and (max-width: 1000px) {
 
-    #header{
-        display:flex;
-        flex-direction: column;
-        width:100%;
-    }
-  h1 {
-    font-size:40px;
-        font-family: 'Work Sans', cursive;    
-
-  }
-
-  #booknow {
-    height:50px;
-    width:100px;
-    font-size:15px;
-  }
-#gridwrapper {
-    display:flex;
-    flex-direction: column;
-        width:100%;
-}
-
-.cottagegrid {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-#frontdescription {
-    margin-top:20px;
-    display:flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    width:100%;
-}
-    #words {
-        display: flex;
-        flex-direction: column;
-        flex-wrap:wrap;
-    }
-img {
-    width:100%;
-}
-
-}
 
     
 
     #gridwrapper {
-        background-color: gray;
+        background: rgb(127,214,201);
+        background: linear-gradient(180deg, rgba(127,214,201,1) 43%, rgba(89,255,147,1) 81%);
         font-family: 'Work Sans';
     }
 
@@ -212,4 +177,170 @@ img {
 
  h4{
     margin:0px;
+    font-size:1.5rem;
  }
+
+ #our {
+    font-size:3rem;
+ }
+
+#toppic {
+    height:auto;
+    margin-top:20px;
+}
+
+#facebook {
+    width:50px;
+    height:50px;
+}
+
+#footerwrapper {
+display:flex;
+justify-content: space-evenly;
+font-family:'Work Sans';
+padding-top:60px;
+color:white;
+}
+
+footer {
+    background: rgb(89,255,147);
+background: linear-gradient(180deg, rgba(89,255,147,1) 0%, rgba(11,126,246,1) 62%);
+}
+
+
+h5 {
+    font-family:'Work Sans';
+    margin:0px;
+    font-size:35px;
+}
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  #dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  #dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    opacity:100%;
+  }
+  
+  /* Change color of dropdown links on hover */
+  #dropdown-content a:hover {background-color: #ddd;opacity:100%;}
+  
+  /* Show the dropdown menu on hover */
+  #dropdown:hover #dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  #dropdown:hover{background-color: #3e8e41;
+    opacity:100%;}
+
+
+  h2 {
+    margin:0px;
+  }
+
+  #phone {
+    font-size:22px;
+  }
+
+  #address {
+    font-size:22px;
+  }
+
+  a{
+   text-decoration:  none;
+   color:inherit;
+  }
+
+  a:visited {
+   color:inherit;
+     }
+
+
+a:active{
+    text-decoration: none;
+    color:inherit;
+}
+
+@media screen and (max-width: 800px) {
+
+    body{
+        display:flex;
+        flex-direction: column;
+        overflow-wrap:break-word;
+      word-wrap: break-word;
+        max-width:300px;
+    }
+    
+      h1 {
+        font-size:40px;
+            font-family: 'Work Sans';   
+            overflow-wrap:break-word;
+      word-wrap: break-word; 
+    
+      }
+    h2 {
+        overflow-wrap:break-word;
+      word-wrap: break-word;
+    }
+      #booknow {
+        height:50px;
+        width:100px;
+        font-size:15px;
+      }
+    #gridwrapper {
+        display:flex;
+        flex-direction: column;
+            width:100%;
+    }
+    
+    .cottagegrid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    #frontdescription {
+        margin-top:20px;
+        display:flex;
+        flex-direction:column;
+        overflow-wrap:break-word;
+      word-wrap: break-word;
+
+        
+    
+    }
+        #words {
+            display: flex;
+            flex-direction: column;
+            overflow-wrap:break-word;
+      word-wrap: break-word;
+        }
+    
+    #navigation {
+    flex-direction: column;
+    gap:30px;
+    
+    }
+    #footerwrapper {
+        display:flex;
+        flex-direction: column;
+    }
+   
+    
+    }
+
