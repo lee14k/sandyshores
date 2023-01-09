@@ -15,7 +15,10 @@ p {
 
 #amenities {
     display:grid;
-    grid-template-columns: repeat(3, 20%);
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    grid-template-rows: repeat(2, 300px);
+
+    
 }
 
 h1 {
@@ -95,4 +98,15 @@ h3 {
 #policies  {
     display:grid;
     grid-template-columns: repeat(4, 20%);
+}
+
+@media screen and (max-width: 800px) {
+
+    h2{
+      font-size: 30px; 
+    }
+    h3 {
+        font-size:10px;
+    }
+
 }
