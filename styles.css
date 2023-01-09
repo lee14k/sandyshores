@@ -383,7 +383,7 @@ a:active{
     }
 
     #googlemaps{
-        width:max-width;
+        width:fit-content;
     }
 
     }
