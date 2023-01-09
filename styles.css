@@ -313,7 +313,7 @@ a:active{
         flex-direction: column;
         overflow-wrap:break-word;
       word-wrap: break-word;
-        max-width:300px;
+        max-width:fit-content;
     }
     
       h1 {
@@ -375,15 +375,15 @@ a:active{
     #mapwrapper {
         display:flex;
         flex-direction: column;
-        max-width:300px;    }
+        width:fit-content;
+    }
     #mapper {
         font-size: 2rem;
-        max-width:300px; 
+        width:fit-content;
     }
 
     #googlemaps{
-        width:150px;
-        height:250px;
+        width:max-width;
     }
 
     }
