@@ -1,0 +1,142 @@
+* {
+    font-family: 'Work Sans';
+}
+
+
+nav,#top {
+    list-style: none;
+    display:flex;
+    gap:25px;
+}
+
+p {
+    display:flex;
+}
+
+#amenities {
+    display:grid;
+    grid-template-columns: repeat(3, minmax(200px, 0.5fr));
+    grid-template-rows: repeat(2, 300px);
+    list-style: none;
+
+
+    
+}
+
+h1 {
+    font-size:4rem;
+}
+
+h2 {
+    font-size:3rem;
+}
+
+h3 {
+    font-size:1.5rem;
+}
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  #dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  #dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    opacity:100%;
+  }
+  
+  /* Change color of dropdown links on hover */
+  #dropdown-content a:hover {background-color: #ddd;opacity:100%;}
+  
+  /* Show the dropdown menu on hover */
+  #dropdown:hover #dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  #dropdown:hover{background-color: #3e8e41;
+    opacity:100%;}
+
+    a{
+        text-decoration:  none;
+        color:inherit;
+       }
+     
+       a:visited {
+        color:inherit;
+          }
+     
+     
+     a:active{
+         text-decoration: none;
+         color:inherit;
+     }
+     #navigation {
+        list-style: none;
+            display: flex;
+        font-size:30px;
+    gap:50px;
+    justify-content: space-between;
+ 
+    font-weight: 900;
+    background: rgba(0, 30, 125, .4);   /*  40% opaque green */ 
+    opacity:100%;
+    color:white;
+    flex-wrap: wrap;
+    }
+    
+#policies  {
+    display:grid;
+    grid-template-columns: repeat(4, 20%);
+    list-style: none;
+
+}
+
+@media screen and (max-width: 600px) {
+
+    h2{
+      font-size: 30px; 
+    }
+    h3 {
+        font-size:10px;
+    }
+
+    body {
+        display:flex;
+        flex-direction: column;
+        overflow-wrap:break-word;
+      word-wrap: break-word;
+        max-width:fit-content;}
+
+        #amenities {
+            display:grid;
+            grid-template-columns: repeat(1, minmax(200px, 0.5fr));
+            grid-template-rows: repeat(2, 300px);
+        
+            
+        }
+
+        #policies {
+            grid-template-columns: repeat(1, minmax(200px, 0.5fr));
+
+        }
+
+        #navigation {
+            flex-direction: column;
+            gap:30px;
+            
+            }
+}
+
