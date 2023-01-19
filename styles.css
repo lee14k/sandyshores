@@ -56,52 +56,52 @@ padding-bottom:100px;
 
 
 #thelodge{
-background-image: url("images/Lodge4.jpg") ;
+background-image: url("cottages/images/Lodge4.jpg") ;
 }
 #sunrisesuite{
-    background-image:url("images/sunrisesuite.jpg") ;
+    background-image:url("cottages/images/sunrisesuite.jpg") ;
 
 }
 #cottageone{
-    background-image: url("images/cottageone.jpg") ;
+    background-image: url("cottages/images/cottageone.jpg") ;
 
 }
 #cottagetwo{
-    background-image: url("images/Cottage2.jpg") ;
+    background-image: url("cottages/images/Cottage2.jpg") ;
 
 }
 #cottagethree{
-    background-image: url("images/Cottage3.jpg") ;
+    background-image: url("cottages/images/Cottage3.jpg") ;
 
 }
 #cottagefour{
-    background-image: url("images/cottage4.jpg") ;
+    background-image: url("cottages/images/cottage4.jpg") ;
 
 }
 #cottagefive{
-    background-image: url("images/cottage5.jpg") ;
+    background-image: url("cottages/images/cottage5.jpg") ;
 
 }
 #cottagesix{
-    background-image: url("images/Cottage6.jpg") ;
+    background-image: url("cottages/images/Cottage6.jpg") ;
 
 }
 #cottageseven{
-    background-image: url("images/Cottage7.jpg") ;
+    background-image: url("cottages/images/Cottage7.jpg") ;
 
 }
 #moteleight{
-    background-image: url("images/Motel-8.jpg") ;
+    background-image: url("cottages/images/Motel-8.jpg") ;
     background-size:100% 100%;
 
 }
 #motelnine{
-    background-image: url("images/Motel9.jpg") ;
+    background-image: url("cottages/images/Motel9.jpg") ;
     background-repeat: no-repeat;
     background-size:100% 100%;
 }
 #motelten{
-    background-image: url("images/motel-units-8-9-10.jpg") ;
+    background-image: url("cottages/images/motel-units-8-9-10.jpg") ;
     background-size:100% 100%;
     background-repeat:no-repeat;
 
@@ -111,7 +111,7 @@ background-image: url("images/Lodge4.jpg") ;
     height:1000px;
     width:100%;
     background-position: 25% 60%;
-    background-image: url('images/sandyshores.jpg');
+    background-image: url('cottages/images/sandyshores.jpg');
     font-family: 'Work Sans', sans-serif; 
     display:flex;
     justify-content: center;
