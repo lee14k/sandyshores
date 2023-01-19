@@ -224,11 +224,16 @@ nav {
     height:50px;
 }
 
+#airbnb {
+    width:60px;
+    height:60px;
+}
+
 #footerwrapper {
 display:flex;
 justify-content: space-between;
 font-family:'Work Sans';
-padding-top:60px;
+padding-top:20px;
 
 }
 
@@ -394,9 +399,6 @@ a:active{
     justify-content: center;
 }
 
-p{
-    margin:0px;
-}
 
 #price {
 margin-left:10px;
@@ -409,4 +411,4 @@ font-weight:900;
 #address {
     white-space: pre;
     text-align: right;
-padding-bottom: 50s0px;}
+}
