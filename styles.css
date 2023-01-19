@@ -226,7 +226,7 @@ nav {
 
 #footerwrapper {
 display:flex;
-justify-content: space-evenly;
+justify-content: space-between;
 font-family:'Work Sans';
 padding-top:60px;
 
@@ -405,3 +405,8 @@ font-size:20px;
 font-weight:900;
 }
 
+
+#address {
+    white-space: pre;
+    text-align: right;
+padding-bottom: 50s0px;}
