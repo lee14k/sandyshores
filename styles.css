@@ -1,7 +1,7 @@
 .cottagegrid {
     display:grid;
     grid-template-columns: repeat(3, 20%);
-    column-gap: 20px;
+    column-gap: 200px;
     row-gap:20px;
     justify-content: center;
 
@@ -411,4 +411,18 @@ font-weight:900;
 #address {
     white-space: pre;
     text-align: right;
+}
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+@media (prefers-reduced-motion: no-preference)   {
+    .square-animation {
+      animation: wipe-enter 1s 1;
+    }
 }
