@@ -212,6 +212,7 @@ nav {
 
  #our {
     font-size:3rem;
+    padding-bottom:60px;
  }
 
 #toppic {
@@ -425,4 +426,9 @@ font-weight:900;
     .square-animation {
       animation: wipe-enter 1s 1;
     }
+}
+
+#booknow:hover {
+    background-color:white;
+    color:black;
 }
