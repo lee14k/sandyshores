@@ -1,4 +1,7 @@
 
+.motelheader {
+    font-size:1.4rem;
+}
 
 .cottagegrid {
     display:grid;
@@ -113,7 +116,8 @@ background-image: url("cottages/images/Lodge4.jpg") ;
     height:1000px;
     width:100%;
     background-position: 25% 60%;
-    background-image: url('cottages/images/sandyshores.jpg');
+    background-image:     linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.73)),
+    url('cottages/images/sandyshores.jpg');
     font-family: 'Work Sans', sans-serif; 
     display:flex;
     justify-content: center;
@@ -207,10 +211,6 @@ nav {
     list-style: none;
  }
 
- h4{
-    margin:0px;
-    font-size:1.5rem;
- }
 
  #our {
     font-size:3rem;
@@ -233,10 +233,11 @@ nav {
 }
 
 #footerwrapper {
-display:flex;
-justify-content: space-between;
+display:flex !important;
+justify-content: space-between!important;
 font-family:'Work Sans';
 padding-top:20px;
+flex-direction: row !important;
 
 }
 
@@ -433,4 +434,22 @@ font-weight:900;
 #booknow:hover {
     background-color:white;
     color:black;
+}
+#title {
+    font-size:7rem;
+}
+
+
+ul {
+    display: flex;
+}
+
+#slideshow {
+display: flex;
+height:750px;
+}
+
+.hotel {
+    display: flex;
+    flex-direction: column;
 }
