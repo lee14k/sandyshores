@@ -19,3 +19,5 @@ let tiles = document.querySelectorAll('.tilewrapper')
 for (e of tiles ) {
     observer.observe(e)
 }
+
+const first = document.querySelector('.')
