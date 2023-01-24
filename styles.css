@@ -212,13 +212,13 @@ nav {
 
     #gridwrapper {
         font-family: 'Work Sans';
- 
-    }
-
-    #frontdescription {
-        display: flex;
-        font-family:'Work Sans' ;
-        padding-bottom:200px;
+        background-image: url( "cottages/images/stacked-waves-haikei4.svg");
+        background-repeat:no-repeat;
+        background-size: 5000px;
+        width:auto;
+        z-index: -1;
+        background
+        
  
     }
 
@@ -248,10 +248,7 @@ nav {
     padding-top:100px;
  }
 
-#toppic {
-    height:auto;
-    margin-top:20px;
-}
+
 
 #facebook {
     width:50px;
@@ -348,7 +345,9 @@ a:active{
 }
 
 @media screen and (max-width: 800px) {
-
+#header {
+  height:1200px;
+}
     body{
         display:flex;
         flex-direction: column;
@@ -357,10 +356,15 @@ a:active{
         max-width:fit-content;
         width:100%;
     }
+
+    #frontpage {
+  
+    }
     
       h1 {
         font-family: 'Work Sans';  
-        font-size:80px !important;
+        font-size:40px !important;
+        margin-top:-300px !important;
  
            
     
@@ -374,6 +378,10 @@ a:active{
         height:50px;
         width:100px;
         font-size:15px;
+        margin-bottom:500px;
+        display:flex;
+        align-items: center;
+        justify-content: center ;
       }
     #gridwrapper {
         display:flex;
@@ -419,6 +427,10 @@ padding-top:500px;
 
     #googlemaps{
         width:100%;
+    }
+
+    #title {
+      padding-bottom:200px;
     }
 
     }
@@ -630,9 +642,8 @@ height:750px;
 #frontdescriptionwrapper {
   position: relative;
   padding-top:200px;
-  background: rgb(241,255,190);
-  background: linear-gradient(180deg, rgba(241,255,190,1) 3%, rgba(187,255,250,1) 61%, rgba(255,255,255,1) 97%);
-  height:700px;
+
+  display: flex;
 }
 
 .custom-shape-divider-top-1674584863 {
@@ -655,3 +666,16 @@ height:750px;
   fill: #FFFFFF;
 }
 
+
+.custom-shape-divider-top-1674595551 svg {
+  position: relative;
+  display: block;
+  width: calc(132% + 1.3px);
+  height: 320px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1674595551 .shape-fill {
+  fill: #FFFFFF;
+  z-index: 1;
+}
