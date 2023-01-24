@@ -1,4 +1,7 @@
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .motelheader {
     font-size:1.4rem;
 }
@@ -18,14 +21,6 @@
 }
 
 
-#mapwrapper {
-    background: rgb(122,117,116);
-    gap:20px;
-    display:flex;
-    padding-bottom:100px;
-    padding-left:20px;
-    padding-top:30px;
-}
 
 #map {
     display:flex;
@@ -38,8 +33,7 @@
 }
 
 #googlemaps {
-    width:600px;
-    height:450px;
+    width:100%;
 }
 
 .tile {
@@ -50,14 +44,7 @@
     filter: drop-shadow(10px 10px 6px gray)
   }
 
-#frontdescriptionwrapper {
-background: rgb(122,117,116);
-background: linear-gradient(180deg, rgba(122,117,116,1) 0%, rgba(125,165,158,1) 14%, rgba(127,214,201,1) 39%,rgba(255,255,255,1) 100%);
-padding-bottom:50px;
-padding-top:50px;
-font-family: 'Work Sans';
-padding-bottom:100px;
-}
+
 
 
 #thelodge{
@@ -113,25 +100,21 @@ background-image: url("cottages/images/Lodge4.jpg") ;
 }
 
 #header {
-    height:1000px;
+    height:1500px;
     width:100%;
     background-position: 25% 60%;
     background-image:     linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.73)),
     url('cottages/images/sandyshores.jpg');
     font-family: 'Work Sans', sans-serif; 
     display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color:white;
+   flex-direction: column;
 
 }
 
 h1 {
     font-family: 'Righteous', cursive;    
     color:white;
-    font-size:9rem;
+    font-size:7rem !important;
     margin-top:7%;
     margin:0px;
 }
@@ -147,6 +130,7 @@ h1 {
     background:transparent;
     color:white;
     flex-wrap: wrap;
+    padding-bottom:20px;
 
 }
 #navigation {
@@ -155,12 +139,12 @@ h1 {
     font-size:30px;
 gap:50px;
 justify-content: space-between;
-margin-bottom: 400px;
 font-weight: 900;
 background: rgba(0, 30, 125, .4);   /*  40% opaque green */ 
 opacity:100%;
 color:white;
-flex-wrap: wrap;
+
+
 }
 ul {
             padding-left:0px;
@@ -175,6 +159,7 @@ li{
 
 nav {
     width:100%;
+    margin-bottom:-20%;
 }
 
 
@@ -182,8 +167,6 @@ nav {
     
 
     #gridwrapper {
-        background: rgb(255,255,255);
-        background: linear-gradient(180deg, rgba(255,255,255,1) 7%, rgba(163,255,239,1) 35%, rgba(166,255,163,1) 54%, rgba(166,255,163,1) 56%, rgba(255,255,255,1) 91%);
         font-family: 'Work Sans';
     }
 
@@ -308,6 +291,7 @@ h5 {
   a:visited {
    color:inherit;
      }
+     
 
 
 a:active{
@@ -323,17 +307,18 @@ a:active{
         overflow-wrap:break-word;
       word-wrap: break-word;
         max-width:fit-content;
+        width:100%;
     }
     
       h1 {
-        font-size:40px;
-            font-family: 'Work Sans';   
-            overflow-wrap:break-word;
-      word-wrap: break-word; 
+        font-family: 'Work Sans';  
+        font-size:80px !important;
+ 
+           
     
       }
     h2 {
-        font-size:20px;
+        font-size:40px;
         overflow-wrap:break-word;
       word-wrap: break-word;
     }
@@ -370,29 +355,19 @@ a:active{
             overflow-wrap:break-word;
       word-wrap: break-word;
         }
-    
-    #navigation {
+  #navigation {
     flex-direction: column;
-    gap:30px;
-    
-    }
+
+  }
+
     #footerwrapper {
         display:flex;
         flex-direction: column;
     }
-   
-    #mapwrapper {
-        display:flex;
-        flex-direction: column;
-        width:fit-content;
-    }
-    #mapper {
-        font-size: 2rem;
-        width:fit-content;
-    }
+  
 
     #googlemaps{
-        width:fit-content;
+        width:100%;
     }
 
     }
@@ -417,26 +392,10 @@ font-weight:900;
     text-align: right;
 }
 
-@keyframes wipe-enter {
-	0% {
-		transform: scale(0, .025);
-	}
-	50% {
-		transform: scale(1, .025);
-	}
-}
-@media (prefers-reduced-motion: no-preference)   {
-    .square-animation {
-      animation: wipe-enter 1s 1;
-    }
-}
 
 #booknow:hover {
     background-color:white;
     color:black;
-}
-#title {
-    font-size:7rem;
 }
 
 
@@ -452,4 +411,157 @@ height:750px;
 .hotel {
     display: flex;
     flex-direction: column;
+}
+
+
+#frontpage {
+    display:flex;
+    flex-direction: column;
+    margin-top:900px;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -20px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 55px;
+  height: 10px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  display:flex;
+  flex-direction: column;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
 }

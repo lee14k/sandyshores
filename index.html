@@ -26,38 +26,74 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
         <script src="https://cdn.tailwindcss.com"></script>
 <body>
-    <section id="header">
-        <nav>
-            <ul id="navigation">
-                <li> <a href="index.html"> Home </a></li>
-                <li>
-                    <div id="dropdown" onclick="void(0)">
-                        Our Cottages
-                        <div id="dropdown-content">
-                            <a href="/cottages/thelodge.html">The Lodge</a>
-                            <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
-                            <a href="/cottages/cottageone.html">Cottage One</a>
-                            <a href="/cottages/cottagetwo.html">Cottage Two</a>
-                            <a href="/cottages/cottagethree.html">Cottage Three</a>
-                            <a href="/cottages/cottagefour.html">Cottage Four</a>
-                            <a href="/cottages/cottagefive.html">Cottage Five</a>
-                            <a href="/cottages/cottagesix.html">Cottage Six</a>
-                            <a href="/cottages/cottageseven.html">Cottage Seven</a>
-                            <a href="/cottages/moteleight.html">Motel Eight</a>
-                            <a href="/cottages/motelnine.html">Motel Nine</a>
-                            <a href="/cottages/motelten.html">Motel Ten</a>
 
+
+    <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <li> <a href="index.html"> Home </a></li>
+
+            <li> <a href="../localattractions.html">Local Attractions</li></a>
+            <li> <a href="about.html">About</li></a>
+            <li> <a href="reserve.html">Reserve your Stay!</li></a>
+            <nav>
+                <ul id="navigation">
+                    <li>
+                        <div id="dropdown" onclick="void(0)">
+                            Our Cottages
+                            <div id="dropdown-content">
+                                    <a href="/cottages/thelodge.html">The Lodge</a>
+                                    <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
+                                    <a href="/cottages/cottageone.html">Cottage One</a>
+                                    <a href="/cottages/cottagetwo.html">Cottage Two</a>
+                                    <a href="/cottages/cottagethree.html">Cottage Three</a>
+                                    <a href="/cottages/cottagefour.html">Cottage Four</a>
+                                    <a href="/cottages/cottagefive.html">Cottage Five</a>
+                                    <a href="/cottages/cottagesix.html">Cottage Six</a>
+                                    <a href="/cottages/cottageseven.html">Cottage Seven</a>
+                                    <a href="/cottages/moteleight.html">Motel Eight</a>
+                                    <a href="/cottages/motelnine.html">Motel Nine</a>
+                                    <a href="/cottages/motelten.html">Motel Ten</a>
+                    
+                                </div>
+    
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li> <a href="../localattractions.html">Local Attractions</li></a>
-                <li> <a href="about.html">About</li></a>
-                <li> <a href="reserve.html">Reserve your Stay!</li></a>
-            </ul>
+                    </li>
+                  
+                </ul>
+          </ul>
+        </div>
+      </nav>
+
+       
         </nav>
+        <section id="header">
+        <section id="frontpage">
         <h1 id="title">Sandy Shores Cottages</h1>
         <h3 id='escanaba'>Escanaba, MI</h3>
         <button id="booknow"> <a href="reserve.html" id="book"> Book now!</a></button>
+    </section>
     </section>
 
 
@@ -65,12 +101,9 @@
 
 
 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.44466473503!2d-87.1299088589774!3d45.682047679607116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d4dbc92164bf231%3A0x499a15e91a293fa0!2sSandy%20Shores%20Cottages!5e0!3m2!1sen!2sus!4v1673276314657!5m2!1sen!2sus"
-            id="googlemaps" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
         <section id="map">
-            <h2 id="mapper">Located just minutes outside of downtown Escanaba</h2>
+            <h2 class="transition ease-in-out delay-150 " id="mapper">Located just minutes outside of downtown Escanaba</h2>
 
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit autem rem praesentium odit dolor
                 molestias repudiandae consectetur perferendis eveniet quaerat rerum aut laborum fuga sunt aliquid
@@ -362,12 +395,12 @@
         <div id="footerwrapper">
             <div id="phone">
 
-                <img src="images/icons8-hand-with-smartphone-50.png" alt=""> (906)-786-3625
+                <img src="cottages/images/icons8-hand-with-smartphone-50.png" alt=""> (906)-786-3625
             </div>
             <ul>
                 <li><a href="https://facebook.com/cottagessandyshores?mibextid=LQQJ4d">
 
-                    <img src="images/f_logo_RGB-Black_58.png" id="facebook" alt="">
+                    <img src="cottages/images/f_logo_RGB-Black_58.png" id="facebook" alt="">
                 </a></li>
                 <li>   <a href="https://instagram.com/sandyshorescottages.">
 
@@ -378,14 +411,13 @@
                 </a></li>
             </ul>
 
-            <div id="address">
-                <p>
-                    Sandy Shores Cottages
-                    E4717 M-35
-                    Escanaba, MI 498294
-                </p>
+          
             </div>
         </div>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.44466473503!2d-87.1299088589774!3d45.682047679607116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d4dbc92164bf231%3A0x499a15e91a293fa0!2sSandy%20Shores%20Cottages!5e0!3m2!1sen!2sus!4v1673276314657!5m2!1sen!2sus"
+        id="googlemaps" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
