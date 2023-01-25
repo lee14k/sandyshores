@@ -213,11 +213,8 @@ nav {
     #gridwrapper {
         font-family: 'Work Sans';
         background-image: url( "cottages/images/stacked-waves-haikei4.svg");
-        background-repeat:no-repeat;
         background-size: 5000px;
-        width:auto;
         z-index: -1;
-        background
         
  
     }
@@ -344,102 +341,8 @@ a:active{
     color:inherit;
 }
 
-@media screen and (max-width: 800px) {
-#header {
-  height:1200px;
-}
-    body{
-        display:flex;
-        flex-direction: column;
-        overflow-wrap:break-word;
-      word-wrap: break-word;
-        max-width:fit-content;
-        width:100%;
-    }
 
-    #frontpage {
-  
-    }
-    
-      h1 {
-        font-family: 'Work Sans';  
-        font-size:40px !important;
-        margin-top:-300px !important;
- 
-           
-    
-      }
-    h2 {
-        font-size:40px;
-        overflow-wrap:break-word;
-      word-wrap: break-word;
-    }
-      #booknow {
-        height:50px;
-        width:100px;
-        font-size:15px;
-        margin-bottom:500px;
-        display:flex;
-        align-items: center;
-        justify-content: center ;
-      }
-    #gridwrapper {
-        display:flex;
-        flex-direction: column;
-            width:100%;
-       
-padding-top:500px;
-    }
-    
-    .cottagegrid {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
 
-    }
-    
-    #frontdescription {
-        margin-top:20px;
-        display:flex;
-        flex-direction:column;
-        overflow-wrap:break-word;
-      word-wrap: break-word;
-
-        
-    
-    }
-        #words {
-            display: flex;
-            flex-direction: column;
-            overflow-wrap:break-word;
-      word-wrap: break-word;
-        }
-  #navigation {
-    flex-direction: column;
-
-  }
-
-    #footerwrapper {
-        display:flex;
-        flex-direction: column;
-    }
-  
-
-    #googlemaps{
-        width:100%;
-    }
-
-    #title {
-      padding-bottom:200px;
-    }
-
-    }
-
-#words {
-    display: flex;
-    font-size:20px;
-    justify-content: center;
-}
 
 
 #price {
@@ -642,7 +545,8 @@ height:750px;
 #frontdescriptionwrapper {
   position: relative;
   padding-top:200px;
-
+    background-color: white;
+    z-index:1;
   display: flex;
 }
 
@@ -668,7 +572,7 @@ height:750px;
 
 
 .custom-shape-divider-top-1674595551 svg {
-  position: relative;
+  position: absolute;
   display: block;
   width: calc(132% + 1.3px);
   height: 320px;
@@ -678,4 +582,19 @@ height:750px;
 .custom-shape-divider-top-1674595551 .shape-fill {
   fill: #FFFFFF;
   z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+ 
+    #gridwrapper {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+    
+.cottagegrid{
+    display: flex;
+    flex-direction: column;
+}
 }
