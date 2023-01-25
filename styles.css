@@ -105,7 +105,7 @@ background-image: url("cottages/images/Lodge4.jpg") ;
     width:100%;
     background-position: 25% 60%;
     background-image:     linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.918)),
-    url('cottages/images/sandyshores.jpg');
+    url('cottages/images/IMG-2850.jpg');
     font-family: 'Work Sans', sans-serif; 
     display:flex;
    flex-direction: column;
@@ -139,7 +139,7 @@ h1 {
  background-color: #ffffff;
  transform: translate(85%, 59.5%);
  z-index:0;
-  
+
 }
 
 .curve::after {
@@ -150,9 +150,9 @@ h1 {
  width:65%;
  height:100%;
  background-image:  
- url('images/forbg.PNG');
+ url('cottages/images/forbg.PNG');
 background-size: cover;
- transform:translate(-4.1%, 40%);
+ transform:translate(-4%, 40%);
 z-index: -1;
 
 

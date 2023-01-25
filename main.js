@@ -20,4 +20,6 @@ for (e of tiles ) {
     observer.observe(e)
 }
 
-const first = document.querySelector('.')
+const first = document.querySelector('#frontpage')
+
+observer.observe (document.querySelector(''))

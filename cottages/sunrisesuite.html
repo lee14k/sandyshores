@@ -11,7 +11,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="cottagestyles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Pacifico&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+        <link
+        href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Pacifico&family=Righteous&family=Work+Sans:wght@300&display=swap"
+        rel="stylesheet">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
 
     </head>
     <body>
@@ -44,9 +50,11 @@
                  <li> <a href="reserve.html">Reserve your Stay!</li></a> 
                 </ul>
                          </nav>
-        <h1>Sunrise Suite</h1>  
+        <h1 class="text-6xl">Sunrise Suite</h1>  
+        <header>
 
-<img src="images/sunrisesuite.jpg" alt="">
+<img src="images/sandyshoresbeach.jpg" alt="" class="object-cover w-full h-5/6	 object-top-center">
+        </header>
 
             <ul id="top">
                 <li>
@@ -67,9 +75,42 @@
             <p>
                 The Sunrise Suite is a fully furnished two-bedroom home with a full kitchen including refrigerator, freezer, gas range and oven, microwave, coffee maker and toaster. The living room has newer carpet and a new futon – 2018. It also has a remodeled bathroom and new kitchen floor – 2017.  Enjoy the stunning view of the beach and lake from the master bedroom window. The second bedroom is at the opposite end of the mobile home.            </p>
 
-            <h2>Pictures</h2>
+            <h2 class="text-4xl	">Pictures</h2>
 
-            <h2>Amenities</h2>
+            <section class="overflow-hidden text-gray-700 ">
+                <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
+                  <div class="flex flex-wrap -m-1 md:-m-2">
+                    <div class="flex flex-wrap w-1/3">
+                      <div class="w-full p-1 md:p-2">
+                        <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                          src="images/sunrisesuite.jpg">
+                      </div>
+                    </div>
+                    <div class="flex flex-wrap w-1/3">
+                      <div class="w-full p-1 md:p-2">
+                        <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                          src="images/Sunrise-suite-2.jpg">
+                      </div>
+                    </div>
+                    <div class="flex flex-wrap w-1/3">
+                      <div class="w-full p-1 md:p-2">
+                        <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                          src="images/Sunrise-suite-3.jpg">
+                      </div>
+                    </div>
+                    <div class="flex flex-wrap w-1/3">
+                      <div class="w-full p-1 md:p-2">
+                        <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                          src="images/Sunrise-Suite-1.jpg">
+                      </div>
+                    </div>
+                 
+                    
+                    </div>
+                  </div>
+              </section>
+
+            <h2 class="text-4xl	">Amenities</h2>
             <ul id ="amenities">
                 <li class="amenity">
                     <img src="images/icons8-parking-50.png" alt="">
@@ -126,12 +167,12 @@
                 </li>
             </ul>
 
-            <h2>Policies</h2>
+            <h2 class="text-4xl	">Policies</h2>
 
             <ul id="policies">
                 <li>
                     <img src="images/icons8-hotel-check-out-50.png" alt="">
-                    <h3>Check in and Out</h2>
+                    <h3>Check in & Out</h3>
                         <span>
                             <ul>
                                 <li>
@@ -176,8 +217,8 @@
 
             </ul>
     
-            <h2>Availability</h2>
-            <iframe width="402" height="346" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=A0508F4E69CB67B5%21119&authkey=%21ABARVqY5HOznPlQ&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&edrtees6=false&resen=false&ed1JS=false"></iframe>
+            <h2 class="text-4xl	">Availability</h2>
+            <iframe id="booking" width="" height="346" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=A0508F4E69CB67B5%21119&authkey=%21ABARVqY5HOznPlQ&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&edrtees6=false&resen=false&ed1JS=false"></iframe>
         <script src="" async defer></script>
     </body>
 </html>
