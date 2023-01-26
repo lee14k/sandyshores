@@ -1,25 +1,14 @@
-
-const observer = new IntersectionObserver(entries =>{
- entries.forEach (entry =>{
-
-        const tile = entry.target.querySelector('.tile')
-    
+const observer = new IntersectionObserver(entries => {
+    entries.forEach (entry => {
+        const picture = entry.target.querySelector('.fireside');
+        console.log(picture)
         if (entry.isIntersecting) {
-            tile.classList.add('square-animation')
+            picture.classList.add('picanimation')
             return;
         }
-        tile.classList.remove('square-animation')
+        picture.classList.remove('picanimation')
     })
 })
 
+observer.observe(document.querySelector('#slideshow'))
 
-let tiles = document.querySelectorAll('.tilewrapper')
-//observer.observe(document.querySelector('.tilewrapper'))
-
-for (e of tiles ) {
-    observer.observe(e)
-}
-
-const first = document.querySelector('#frontpage')
-
-observer.observe (document.querySelector(''))
