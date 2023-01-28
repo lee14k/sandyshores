@@ -626,13 +626,16 @@ height:750px;
     flex-direction: column;
 }
  
+  
+body {
+  height: 100vh;
+}
     #gridwrapper {
         display:flex;
         flex-direction: column;
    
 
     }
-
 
     
 .cottagegrid{
@@ -641,17 +644,12 @@ height:750px;
 }
 }
 
-#svgwrapper {
 
-  height:100%;
-  
-  }
   
   #gridwrapper {
     background-image:url("cottages/images/stacked-waves-haikei4.svg");
     background-repeat:no-repeat;
-   background-size: 10000px;
+   background-size: 15000px;
 
   
   }
-  
