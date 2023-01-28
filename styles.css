@@ -617,21 +617,6 @@ height:750px;
 
 
 
-#svgwrapper {
-width:100vw;
-height:100vh;
-height:100%;
-
-}
-
-#gridwrapper {
-  background-image:url("cottages/images/stacked-waves-haikei4.svg");
-  background-repeat:no-repeat;
- background-size: 5000px;
- overflow-y: hidden;
- max-height: 100%;
-
-}
 
 @media screen and (max-width: 800px) {
   html, body {
@@ -658,3 +643,18 @@ height:100%;
     flex-direction: column;
 }
 }
+
+#svgwrapper {
+
+  height:100%;
+  
+  }
+  
+  #gridwrapper {
+    background-image:url("cottages/images/stacked-waves-haikei4.svg");
+    background-repeat:no-repeat;
+   background-size: 10000px;
+
+  
+  }
+  
