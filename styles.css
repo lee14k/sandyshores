@@ -587,6 +587,7 @@ height:750px;
         display:flex;
         flex-direction: column;
         flex-wrap: wrap;
+        background-size: 5000px;
 
     }
     
