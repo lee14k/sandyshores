@@ -586,6 +586,7 @@ height:750px;
         display:flex;
         flex-direction: column;
         flex-wrap: wrap;
+        background: url("cottages/images/mobile.svg");
     }
     
 .cottagegrid{
