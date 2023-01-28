@@ -582,15 +582,11 @@ height:750px;
     max-width: 100%;
     overflow-x: hidden;
 }
- #svgwrapper {
-  height:7000px;
- }
+
     #gridwrapper {
         display:flex;
         flex-direction: column;
         flex-wrap: wrap;
-        background-size:auto 100000px;
-
     }
     
 .cottagegrid{
