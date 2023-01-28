@@ -211,7 +211,8 @@ nav {
 
     #gridwrapper {
         font-family: 'Work Sans';
- 
+        background-image: url( "cottages/images/stacked-waves-haikei4.svg");
+        background-size: 20000px;
         z-index: -1;
         
  
@@ -576,7 +577,25 @@ height:750px;
   z-index: 1;
 }
 
+@media screen and (max-width: 800px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+ 
+    #gridwrapper {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+                background-size: 5000px;
 
+    }
+    
+.cottagegrid{
+    display: flex;
+    flex-direction: column;
+}
+}
 
 .fireside {
   width:100%;
@@ -613,44 +632,3 @@ height:750px;
 #slideshow {
   display: flex;
 }
-
-
-
-
-
-@media screen and (max-width: 800px) {
-  html, body {
-    display:flex;
-    max-width: 100%;
-    overflow-x: hidden;
-    flex-direction: column;
-}
- 
-  
-body {
-  height: 100vh;
-}
-    #gridwrapper {
-        display:flex;
-        flex-direction: column;
-   
-
-    }
-
-    
-.cottagegrid{
-    display: flex;
-    flex-direction: column;
-}
-}
-
-
-  
-  #gridwrapper {
-    background-image:url("cottages/images/stacked-waves-haikei4.svg");
-    background-repeat:no-repeat;
-   background-size: 15000px;
-   height:1000px;
-
-  
-  }
