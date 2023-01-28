@@ -212,7 +212,7 @@ nav {
     #gridwrapper {
         font-family: 'Work Sans';
         background-image: url( "cottages/images/stacked-waves-haikei4.svg");
-        background-size: 5000px;
+        background-size: 20000px;
         z-index: -1;
         
  
@@ -577,7 +577,7 @@ height:750px;
   z-index: 1;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   html, body {
     display:flex;
     max-width: 100%;
@@ -590,6 +590,7 @@ height:750px;
         flex-direction: column;
         flex-wrap: wrap;
         height:100%;
+        background-size: 10000px;
 
     }
     
