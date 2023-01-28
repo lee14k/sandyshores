@@ -615,26 +615,7 @@ height:750px;
 }
 
 
-@media screen and (max-width: 800px) {
-  html, body {
-    display:flex;
-    max-width: 100%;
-    overflow-x: hidden;
-    flex-direction: column;
-}
- 
-    #gridwrapper {
-        display:flex;
-        flex-direction: column;
-   
 
-    }
-    
-.cottagegrid{
-    display: flex;
-    flex-direction: column;
-}
-}
 
 #svgwrapper {
 width:100vw;
@@ -650,4 +631,30 @@ height:100%;
  overflow-y: hidden;
  max-height: 100%;
 
+}
+
+@media screen and (max-width: 800px) {
+  html, body {
+    display:flex;
+    max-width: 100%;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+ 
+    #gridwrapper {
+        display:flex;
+        flex-direction: column;
+   
+
+    }
+
+    #svgwrapper {
+      width:100vw;
+      height:100vh;
+    }
+    
+.cottagegrid{
+    display: flex;
+    flex-direction: column;
+}
 }
