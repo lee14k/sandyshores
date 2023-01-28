@@ -212,7 +212,8 @@ nav {
     #gridwrapper {
         font-family: 'Work Sans';
         background: url( "cottages/images/stacked-waves-haikei4.svg");
-     background-size: 10000px;
+     background-size: 100vh;
+     background-repeat: no-repeat;
 
  
     }
