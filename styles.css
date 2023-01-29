@@ -38,11 +38,11 @@ html, body {
 }
 
 .tile {
-    border:solid aqua;
+    border:solid rgb(191, 255, 255);
     height:300px;
     width:300px;
     color:white;
-    filter: drop-shadow(10px 10px 6px gray)
+    filter: drop-shadow(10px 6px 6px #add8e6)
   }
 
 
@@ -608,7 +608,7 @@ margin-top:50px;
 
 .fireside {
   width:100%;
-  height:95%;
+  height:125%;
   display: flex;
   justify-content: center;
 }
@@ -644,4 +644,8 @@ margin-top:50px;
 
 #escanaba {
   color:#ffffff;
+}
+
+.guests {
+  font-size:1.2rem;
 }
