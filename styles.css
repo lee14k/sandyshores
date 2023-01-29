@@ -593,6 +593,17 @@ height:750px;
     display: flex;
     flex-direction: column;
 }
+
+#title {
+padding-top:200px;
+font-size:5rem !important;
+}
+#booknow {
+margin-top:50px;
+}
+#escanaba {
+  margin:5px;
+}
 }
 
 .fireside {
@@ -629,4 +640,8 @@ height:750px;
 
 #slideshow {
   display: flex;
+}
+
+#escanaba {
+  color:#ffffff;
 }
