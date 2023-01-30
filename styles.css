@@ -9,9 +9,11 @@ html, body {
 .cottagegrid {
     display:grid;
     grid-template-columns: repeat(3, 20%);
-    column-gap: 200px;
-    row-gap:20px;
+    column-gap: 125px;
+    row-gap: 10px !important;
     justify-content: center;
+    grid-template-rows: repeat(4, 20%);
+
 
 
 
@@ -42,7 +44,8 @@ html, body {
     height:300px;
     width:300px;
     color:white;
-    filter: drop-shadow(10px 6px 6px #add8e6)
+    filter: drop-shadow(10px 6px 6px #add8e6);
+    
   }
 
 
@@ -50,52 +53,77 @@ html, body {
 
 #thelodge{
 background-image: url("cottages/images/Lodge4.jpg") ;
+background-size: 100% 55%;
+background-repeat: no-repeat;
+background-color:white;
 }
 #sunrisesuite{
     background-image:url("cottages/images/sunrisesuite.jpg") ;
-
+    background-size: 100% 55%;
+    background-repeat: no-repeat;
+    background-color:white;
 }
 #cottageone{
     background-image: url("cottages/images/cottageone.jpg") ;
-
+    background-size: 100% 55%;
+    background-repeat: no-repeat;
+    background-color:white;
 }
 #cottagetwo{
     background-image: url("cottages/images/Cottage2.jpg") ;
-
+    background-size: 100% 55%;
+    background-repeat: no-repeat;
+    background-color:white;
 }
 #cottagethree{
     background-image: url("cottages/images/Cottage3.jpg") ;
-
+    background-size: 100% 55%;
+    background-repeat: no-repeat;
+    background-color:white;
 }
 #cottagefour{
     background-image: url("cottages/images/cottage4.jpg") ;
-
+    background-size: 100% 55%;
+    background-repeat: no-repeat;
+    background-color:white;
 }
 #cottagefive{
     background-image: url("cottages/images/cottage5.jpg") ;
-
+    background-size: 100% 55%;
+    background-repeat: no-repeat;
+    background-color:white;
 }
 #cottagesix{
     background-image: url("cottages/images/Cottage6.jpg") ;
-
+    background-size: 100% 55%;
+    background-repeat: no-repeat;
+    background-color:white;
 }
 #cottageseven{
     background-image: url("cottages/images/Cottage7.jpg") ;
-
+    background-size: 100% 55%;
+    background-repeat: no-repeat;
+    background-color:white;
 }
 #moteleight{
     background-image: url("cottages/images/Motel-8.jpg") ;
-    background-size:100% 100%;
-
+    background-size: 100% 55%;
+    background-repeat: no-repeat;
+    background-color:white;
 }
 #motelnine{
     background-image: url("cottages/images/Motel9.jpg") ;
     background-repeat: no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 55%;
+background-repeat: no-repeat;
+background-color:white;
 }
 #motelten{
     background-image: url("cottages/images/motel-units-8-9-10.jpg") ;
     background-size:100% 100%;
+    background-size: 100% 55%;
+background-repeat: no-repeat;
+background-color:white;
     background-repeat:no-repeat;
 
 }
@@ -213,6 +241,7 @@ nav {
         font-family: 'Work Sans';
         background: url( "cottages/images/stacked-waves-haikei4.svg");
      background-size: 10000px;
+     
 
  
     }
@@ -232,6 +261,8 @@ nav {
 
  .description {
     list-style: none;
+    padding-top:170px;
+    color:black;
  }
 
 
