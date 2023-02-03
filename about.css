@@ -22,6 +22,10 @@ p {
 }
 
 h1 {
+    z-index: 1;
+    color:#ffff;
+    font-weight:900;
+   
 
     font-family: 'Work Sans';
 }
@@ -31,7 +35,7 @@ h2 {
 }
 
 h3 {
-    font-size:1.5rem;
+    font-size:3.5rem;
 }
 
 #dropdown {
@@ -112,11 +116,33 @@ h3 {
 }
 
 #aboutwrapper {
-    display: flex;
+    background-image: url(cottages/images/wave-haikei-about.svg);
+ background-size: 100% 100%;
+ width:2000px;
+height:500px;
+padding-top:50px; 
+padding-bottom:0px;
 }
 
 
-img {
-    width:275px !important;
-    height:auto;
+#text {
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    padding-right:200px;
+}
+
+#textwrapper {
+    margin-top:-250px;
+   column-gap: -200px;
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 2fr;
+   
+
+}
+
+#about {
+    max-height:100%;
+    max-width:100%;
 }
