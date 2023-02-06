@@ -1,6 +1,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    font-family: 'Work Sans';
 }
 .motelheader {
     font-size:1.4rem;
@@ -679,4 +680,15 @@ margin-top:50px;
 
 .guests {
   font-size:1.2rem;
+}
+
+#localat {
+  height:fit-content;
+  display:flex;
+flex-direction: column;
+}
+
+#local {
+  color:black;
+padding-bottom:300px;
 }

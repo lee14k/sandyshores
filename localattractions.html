@@ -4,62 +4,135 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="about.css">
-        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Pacifico&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 
-    </head>
-    <body>
-        <nav>
-            <ul id="navigation">
-             <li> <a href="index.html"> Home </a></li>
-             <li>
-                 <div id="dropdown">
-                 Our Cottages
-                 <div id="dropdown-content">
-                    <a href="/cottages/thelodge.html">The Lodge</a>
-                    <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
-                    <a href="/cottages/cottageone.html">Cottage One</a>
-                    <a href="/cottages/cottagetwo.html">Cottage Two</a>
-                    <a href="/cottages/cottagethree.html">Cottage Three</a>
-                    <a href="/cottages/cottagefour.html">Cottage Four</a>
-                    <a href="/cottages/cottagefive.html">Cottage Five</a>
-                    <a href="/cottages/cottagesix.html">Cottage Six</a>
-                    <a href="/cottages/cottageseven.html">Cottage Seven</a>
-                    <a href="/cottages/moteleight.html">Motel Eight</a>
-                    <a href="/cottages/motelnine.html">Motel Nine</a>
-                    <a href="/cottages/motelten.html">Motel Ten</a>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Pacifico&family=Righteous&family=Work+Sans:wght@300&display=swap"
+        rel="stylesheet">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+<body>
+
+    <h1 id="local" class="text-6xl">Local Attractions</h1>
+
+    <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <li> <a href="../index.html"> Home </a></li>
+
+            <li> <a href="../localattractions.html">Local Attractions</li></a>
+            <li> <a href="about.html">About</li></a>
+            <li> <a href="reserve.html">Reserve your Stay!</li></a>
+            <nav>
+                <ul id="navigation">
+                    <li>
+                        <div id="dropdown" onclick="void(0)">
+                            Our Cottages
+                            <div id="dropdown-content">
+                                    <a href="/cottages/thelodge.html">The Lodge</a>
+                                    <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
+                                    <a href="/cottages/cottageone.html">Cottage One</a>
+                                    <a href="/cottages/cottagetwo.html">Cottage Two</a>
+                                    <a href="/cottages/cottagethree.html">Cottage Three</a>
+                                    <a href="/cottages/cottagefour.html">Cottage Four</a>
+                                    <a href="/cottages/cottagefive.html">Cottage Five</a>
+                                    <a href="/cottages/cottagesix.html">Cottage Six</a>
+                                    <a href="/cottages/cottageseven.html">Cottage Seven</a>
+                                    <a href="/cottages/moteleight.html">Motel Eight</a>
+                                    <a href="/cottages/motelnine.html">Motel Nine</a>
+                                    <a href="/cottages/motelten.html">Motel Ten</a>
+                    
+                                </div>
     
-                </div>
-             </div>
-             </li>
-             <li> <a href="../localattractions.html">Local Attractions</li></a> 
-             <li> <a href="about.html">About</li></a> 
-             <li> <a href="reserve.html">Reserve your Stay!</li></a> 
-            </ul>
-                     </nav>
-        <h1>Local Attractions</h1>
-        <section id="attractionwrapper">
+                            </div>
+                        </div>
+                    </li>
+                  
+                </ul>
+          </ul>
+        </div>
+      </nav>
 
-            <section>Slideshow</section>
+       
+        </nav>
 
-            <div id="leftsidepics"></div>
-            <h1>Things to do, see, and eat!</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tempore, nisi adipisci doloribus dolorem id est minus ex beatae impedit in recusandae quas. Ducimus facere doloribus cupiditate ab! Consectetur, culpa.</p>
 
-            <h2>Take a look!</h2>
-            <div id="gallery">
-                gallery of pictures, click on to go to local businesses
-            </div>
+        <section id="localat">
 
      
+            <section class="overflow-hidden text-gray-700">
+                <div class="container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
+                    <div class="flex flex-wrap -m-1 md:-m-2">
+                        <div class="flex flex-wrap w-1/2">
+                            <div class="w-1/2 p-1 md:p-2">
+                                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                                    src="cottages/images/Lodge-2.jpg">
+                            </div>
+                            <div class="w-1/2 p-1 md:p-2">
+                                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                                src="cottages/images/Lodge-2.jpg">
+                            </div>
+                            <div class="w-full p-1 md:p-2">
+                                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                                src="cottages/images/Lodge-2.jpg">
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap w-1/2">
+                            <div class="w-full p-1 md:p-2">
+                                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                                src="cottages/images/Lodge-2.jpg">
+                            </div>
+                            <div class="w-1/2 p-1 md:p-2">
+                                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                                src="cottages/images/Lodge-2.jpg">
+                            </div>
+                            <div class="w-1/2 p-1 md:p-2">
+                                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                                src="cottages/images/Lodge-2.jpg">
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+  
     </section>
 
-        <script src="" async defer></script>
-    </body>
-</html>
+    <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam doloremque officia velit sed perferendis architecto fugiat consequuntur. Nam laborum minus culpa corrupti dolorum magni voluptas provident magnam rem. Perferendis, pariatur!</section>
+</body>
+</head>
