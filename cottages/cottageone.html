@@ -20,55 +20,87 @@
     <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-        <section id="header">
-            <nav>
-                <ul id="navigation">
-                 <li> <a href="../index.html"> Home </a></li>
-                 <li>
-                     <div id="dropdown">
-                     Our Cottages
-                     <div id="dropdown-content">
-                        <a href="/cottages/thelodge.html">The Lodge</a>
-                        <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
-                        <a href="/cottages/cottageone.html">Cottage One</a>
-                        <a href="/cottages/cottagetwo.html">Cottage Two</a>
-                        <a href="/cottages/cottagethree.html">Cottage Three</a>
-                        <a href="/cottages/cottagefour.html">Cottage Four</a>
-                        <a href="/cottages/cottagefive.html">Cottage Five</a>
-                        <a href="/cottages/cottagesix.html">Cottage Six</a>
-                        <a href="/cottages/cottageseven.html">Cottage Seven</a>
-                        <a href="/cottages/moteleight.html">Motel Eight</a>
-                        <a href="/cottages/motelnine.html">Motel Nine</a>
-                        <a href="/cottages/motelten.html">Motel Ten</a>
-        
-                    </div>
-                 </div>
-                 </li>
-                 <li> <a href="localattractions.html">Local Attractions</li></a> 
-                 <li> <a href="about.html">About</li></a> 
-                 <li> <a href="reserve.html">Reserve your Stay!</li></a> 
-                </ul>
-                         </nav>
-                         <div id="hero">
+        <nav id="mainnav"role="navigation" style="background-image: url(images/IMG_1857.jpg)">
 
-        <h1 class="text-6xl">Cottage One</h1>  
-        <img src="images/cottageone.jpg" alt="" class="object-cover w-full h-5/6	 object-top-center">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+    
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <li> <a href="../index.html"> Home </a></li>
+    
+                <li> <a href="../localattractions.html">Local Attractions</li></a>
+                <li> <a href="../about.html">About</li></a>
+                <li> <a href="../reserve.html">Reserve your Stay!</li></a>
+    
+                <nav>
+                    <ul id="navigation">
+                        <li>
+                            <div id="dropdown" onclick="void(0)">
+                                Our Cottages
+                                <div id="dropdown-content">
+                                        <a href="/cottages/thelodge.html">The Lodge</a>
+                                        <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
+                                        <a href="/cottages/cottageone.html">Cottage One</a>
+                                        <a href="/cottages/cottagetwo.html">Cottage Two</a>
+                                        <a href="/cottages/cottagethree.html">Cottage Three</a>
+                                        <a href="/cottages/cottagefour.html">Cottage Four</a>
+                                        <a href="/cottages/cottagefive.html">Cottage Five</a>
+                                        <a href="/cottages/cottagesix.html">Cottage Six</a>
+                                        <a href="/cottages/cottageseven.html">Cottage Seven</a>
+                                        <a href="/cottages/moteleight.html">Motel Eight</a>
+                                        <a href="/cottages/motelnine.html">Motel Nine</a>
+                                        <a href="/cottages/motelten.html">Motel Ten</a>
+                        
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </li>
+                      
+                    </ul>
+              </ul>
+            </div>
+          </nav>
+
+     
 
         <header>
+            <h1 class="text-6xl">Cottage One</h1> 
             <p id="desc" class="text-lg break-words text-ellipsis n">
                 This cottage has two bedrooms each with a full-sized bed, living room, kitchen with refrigerator, freezer, gas range and oven, coffee maker, microwave and toaster. In 2017, the kitchen and living room flooring was updated.  A large picture window in the living room provides an unbeatable view of the beach and lake. Enjoy the lake breezes, as well. </p>
         
                 <ul id="top" class="text-lg">
                     <li class="item">
                     <img src="images/icons8-head-profile-50.png">
-                    4 Guests
+                    4* Guests
+                    <p class="text-sm">*sleeps up to 5, additional $50 per person</p>                </li>
                 </li>
                 <li class="item">
                     <img src="images/icons8-toilet-room-50.png" >
                     1 Bathroom</li>
                 <li class="item">
                     <img src="images/icons8-single-bed-50.png">
-                    3 Beds</li>
+                    3 Beds
+                    <p class="text-sm">3 full size beds</p></li>
+                </li>
                 <li class="item">
                     <img src="images/icons8-hotel-bed-50.png">
                     2 Bedrooms</li>
@@ -187,7 +219,7 @@
         Check in = 3PM
     </li>
     <li>
-        Check out = 9PM
+        Check out = 9AM
     </li>
 </ul></span></li>
 <li>
@@ -208,7 +240,7 @@
         <h3 class="text-4xl">Rates</h3>
         <span class ="text-lg">
             <ul>
-            <li>$200/$100 reservation fee for cottage/motel</li>
+            <li>$200 reservation fee for cottage</li>
             <li>$900 per week</li>
         </ul></span></li>
         <li>

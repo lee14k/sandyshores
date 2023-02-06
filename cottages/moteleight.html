@@ -21,58 +21,90 @@
 
     </head>
     <body>
-        <section id="header">
-            <nav>
-                <ul id="navigation">
-                 <li> <a href="../index.html"> Home </a></li>
-                 <li>
-                     <div id="dropdown">
-                     Our Cottages
-                     <div id="dropdown-content">
-                         <a href="/cottages/thelodge.html">The Lodge</a>
-                         <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
-                         <a href="/cottages/cottageone.html">Cottage One</a>
-                         <a href="/cottages/cottagetwo.html">Cottage Two</a>
-                         <a href="/cottages/cottagethree.html">Cottage Three</a>
-                         <a href="/cottages/cottagefour.html">Cottage Four</a>
-                         <a href="/cottages/cottagefive.html">Cottage Five</a>
-                         <a href="/cottages/cottagesix.html">Cottage Six</a>
-                         <a href="/cottages/cottageseven.html">Cottage Seven</a>
-                         <a href="/cottages/moteleight.html">Motel Eight</a>
-                         <a href="/cottages/motelnine.html">Motel Nine</a>
-                         <a href="/cottages/motelten.html">Motel Ten</a>
-         
-                     </div>
-                 </div>
-                 </li>
-                 <li> <a href="localattractions.html">Local Attractions</li></a> 
-                 <li> <a href="about.html">About</li></a> 
-                 <li> <a href="reserve.html">Reserve your Stay!</li></a> 
-                </ul>
-                         </nav>
+        <nav id="mainnav"role="navigation" style="background-image: url(images/motel-units-8-9-10.jpg)">
+
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+    
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <li> <a href="../index.html"> Home </a></li>
+    
+                <li> <a href="../localattractions.html">Local Attractions</li></a>
+                <li> <a href="../about.html">About</li></a>
+                <li> <a href="../reserve.html">Reserve your Stay!</li></a>
+    
+                <nav>
+                    <ul id="navigation">
+                        <li>
+                            <div id="dropdown" onclick="void(0)">
+                                Our Cottages
+                                <div id="dropdown-content">
+                                        <a href="/cottages/thelodge.html">The Lodge</a>
+                                        <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
+                                        <a href="/cottages/cottageone.html">Cottage One</a>
+                                        <a href="/cottages/cottagetwo.html">Cottage Two</a>
+                                        <a href="/cottages/cottagethree.html">Cottage Three</a>
+                                        <a href="/cottages/cottagefour.html">Cottage Four</a>
+                                        <a href="/cottages/cottagefive.html">Cottage Five</a>
+                                        <a href="/cottages/cottagesix.html">Cottage Six</a>
+                                        <a href="/cottages/cottageseven.html">Cottage Seven</a>
+                                        <a href="/cottages/moteleight.html">Motel Eight</a>
+                                        <a href="/cottages/motelnine.html">Motel Nine</a>
+                                        <a href="/cottages/motelten.html">Motel Ten</a>
+                        
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </li>
+                      
+                    </ul>
+              </ul>
+            </div>
+          </nav>
+    
 
         <header>
             <h1 class="text-6xl">Motel Eight</h1>  
             <p id="desc" class="text-lg break-words text-ellipsis n">
-                Each unit has a combined sleeping/sitting area with a wall-mounted flat-screen T.V., small refrigerator and coffee maker, microwave and bedroom with two beds. Motel 8 and 10 have two double beds.  Motel 9 is slightly larger and has a queen and a double bed.  Each unit has a bathroom with full tub and shower. </p>
-        </header>
+                Each unit has a combined sleeping/sitting area with a flat-screen T.V., small refrigerator and coffee maker, microwave and bedroom with two beds. Motel 8 and 10 have two double beds.  Motel 9 is slightly larger and has a queen and a double bed.  Each unit has a bathroom with full tub and shower. </p>
 
 
             <ul id="top" class="text-lg">
-                <li>
+                <li class="item">
                     <img src="images/icons8-head-profile-50.png">
                     4 Guests
                 </li>
-                <li>
+                <li class="item">
                     <img src="images/icons8-toilet-room-50.png" >
                     1 Bathroom</li>
-                <li>
-                    <img src="images/icons8-single-bed-50.png">
-                    2 Beds</li>
-                <li>
-                    <img src="images/icons8-hotel-bed-50.png">
+                    <li class="item">
+                        <img src="images/icons8-single-bed-50.png">
+                    2 Beds
+                    <p class="text-sm">2 full size beds</p></li>
+                    <li class="item">
+                        <img src="images/icons8-hotel-bed-50.png">
                     1 Bedrooms</li>
             </ul>
+        </header>
 
           
            <h2 class="text-4xl	">Pictures</h2>
@@ -82,42 +114,27 @@
                 <div class="flex flex-wrap w-1/3">
                   <div class="w-full p-1 md:p-2">
                     <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
+                      src="images/Motel-8-1-300x215.jpg">
                   </div>
                 </div>
                 <div class="flex flex-wrap w-1/3">
                   <div class="w-full p-1 md:p-2">
                     <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp">
+                      src="images/Motel-8-2-300x215.jpg">
                   </div>
                 </div>
                 <div class="flex flex-wrap w-1/3">
                   <div class="w-full p-1 md:p-2">
                     <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp">
+                      src="images/Motel-8-3-300x215.jpg">
                   </div>
                 </div>
-                <div class="flex flex-wrap w-1/3">
-                  <div class="w-full p-1 md:p-2">
-                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp">
-                  </div>
-                </div>
-                <div class="flex flex-wrap w-1/3">
-                  <div class="w-full p-1 md:p-2">
-                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp">
-                  </div>
-                </div>
-                <div class="flex flex-wrap w-1/3">
-                  <div class="w-full p-1 md:p-2">
-                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp">
-                  </div>
-                </div>
+               
               </div>
             </div>
           </section>
+
+          <section id="perks">
                 <h2 class="text-4xl	">Amenities</h2>
             <ul id ="amenities">
                 <li class="amenity">
@@ -151,7 +168,7 @@
                     </ul></span>
                 </li>
                     <li class="amenity">                    <img src="images/icons8-beach-ball-50.png" alt="">
-                    <h3 class="text-4xl">Entertainment</h3>
+                    <h3 class="text-4xl">Activities</h3>
                     <span>
                         <ul>
                             <li>Cable TV</li>
@@ -174,6 +191,9 @@
                 </li>
                 
             </ul>
+</section>
+
+<section id="boringstuff">
 
             <h2 class="text-4xl	">Policies</h2>
 
@@ -207,8 +227,10 @@
         
         <h3 class="text-4xl">Rates</h3>
         <span> <ul>
-            <li>$200/$100 reservation fee for cottage/motel</li>
-            <li>$700 per week or $100 nightly</li>
+            <li>$100 reservation fee</li>
+            <li>In season $700 per week or $100 nightly</li>
+            <li>20% discount off season</li>
+            <li>In season = June 24th - August 26th</li>
         </ul></span></li>
         <li>
             <img src="images/icons8-beach-60.png" alt="">
@@ -219,7 +241,7 @@
             </ul></span></li>
 
             </ul>
-    
+</section>
             <h2 class="text-4xl	">Availability</h2>
             <iframe width="402" height="346" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=A0508F4E69CB67B5%21119&authkey=%21ABARVqY5HOznPlQ&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&edrtees6=false&resen=false&ed1JS=false"></iframe>
         <script src="" async defer></script>

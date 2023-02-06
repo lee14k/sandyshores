@@ -21,41 +21,72 @@
 
     </head>
     <body>
-        <section id="header">
-            <nav>
-                <ul id="navigation">
-                 <li> <a href="../index.html"> Home </a></li>
-                 <li>
-                     <div id="dropdown">
-                     Our Cottages
-                     <div id="dropdown-content">
-                        <a href="/cottages/thelodge.html">The Lodge</a>
-                        <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
-                        <a href="/cottages/cottageone.html">Cottage One</a>
-                        <a href="/cottages/cottagetwo.html">Cottage Two</a>
-                        <a href="/cottages/cottagethree.html">Cottage Three</a>
-                        <a href="/cottages/cottagefour.html">Cottage Four</a>
-                        <a href="/cottages/cottagefive.html">Cottage Five</a>
-                        <a href="/cottages/cottagesix.html">Cottage Six</a>
-                        <a href="/cottages/cottageseven.html">Cottage Seven</a>
-                        <a href="/cottages/moteleight.html">Motel Eight</a>
-                        <a href="/cottages/motelnine.html">Motel Nine</a>
-                        <a href="/cottages/motelten.html">Motel Ten</a>
+        <nav id="mainnav"role="navigation" style="background-image: url(images/IMG_1848.jpg)">
+
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+    
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <li> <a href="../index.html"> Home </a></li>
+    
+                <li> <a href="../localattractions.html">Local Attractions</li></a>
+                <li> <a href="../about.html">About</li></a>
+                <li> <a href="../reserve.html">Reserve your Stay!</li></a>
+    
+                <nav>
+                    <ul id="navigation">
+                        <li>
+                            <div id="dropdown" onclick="void(0)">
+                                Our Cottages
+                                <div id="dropdown-content">
+                                        <a href="/cottages/thelodge.html">The Lodge</a>
+                                        <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
+                                        <a href="/cottages/cottageone.html">Cottage One</a>
+                                        <a href="/cottages/cottagetwo.html">Cottage Two</a>
+                                        <a href="/cottages/cottagethree.html">Cottage Three</a>
+                                        <a href="/cottages/cottagefour.html">Cottage Four</a>
+                                        <a href="/cottages/cottagefive.html">Cottage Five</a>
+                                        <a href="/cottages/cottagesix.html">Cottage Six</a>
+                                        <a href="/cottages/cottageseven.html">Cottage Seven</a>
+                                        <a href="/cottages/moteleight.html">Motel Eight</a>
+                                        <a href="/cottages/motelnine.html">Motel Nine</a>
+                                        <a href="/cottages/motelten.html">Motel Ten</a>
+                        
+                                    </div>
         
-                    </div>
-                 </div>
-                 </li>
-                 <li> <a href="localattractions.html">Local Attractions</li></a> 
-                 <li> <a href="about.html">About</li></a> 
-                 <li> <a href="reserve.html">Reserve your Stay!</li></a> 
-                </ul>
-                         </nav>
+                                </div>
+                            </div>
+                        </li>
+                      
+                    </ul>
+              </ul>
+            </div>
+          </nav>
+     
                        
 <header>
     <h1 class="text-6xl">Cottage Five</h1>  
 
     <p id="desc" class="text-lg break-words text-ellipsis n">
-        This cottage has two bedrooms each with a full-sized bed, living room with warm, wood paneling, kitchen with refrigerator, freezer, gas range and oven, microwave, coffee maker and toaster. This cottage is in a shadier section of the property. The flooring in the kitchen / living room area is new as of 2018.   
+        This cottage has two bedrooms each with a full-sized bed, living room with warm, wood paneling, kitchen with refrigerator, freezer, gas range and oven, microwave, coffee maker and toaster. This cottage is in a shadier section of the property. 
      </p> 
 
 
@@ -63,14 +94,19 @@
             <ul id="top" class="text-lg">
                 <li class="item">
                     <img src="images/icons8-head-profile-50.png">
-                    4 Guests
+                    4* Guests
+                    <p class="text-sm">*sleeps up to 5, additional $50 per person</p>                </li>
+
                 </li>
                 <li class="item">
                     <img src="images/icons8-toilet-room-50.png" >
                     1 Bathroom</li>
                 <li class="item">
                     <img src="images/icons8-single-bed-50.png">
-                    3 Beds</li>
+                    3 Beds
+                    <p class="text-sm">1 queen bed + 2 full size beds</p></li>
+
+                </li>
                 <li class="item">
                     <img src="images/icons8-hotel-bed-50.png">
                     2 Bedrooms</li>
@@ -121,14 +157,32 @@
                 </ul></span>
                 </li>
 
-                    <li class="amenity">                    <img src="images/icons8-toilet-room-50.png" alt="">
-                    <h3 class="text-4xl">Bathroom</h3>
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi magni asperiores quam est commodi itaque sed nulla accusantium alias nobis architecto ad molestias officia, ratione dolorum consequatur, perferendis tempora corrupti?</span>
-                </li>
-                    <li class="amenity">                    <img src="images/icons8-restaurant-50.png" alt="">
-                    <h3 class="text-4xl">Kitchen</h3>
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi magni asperiores quam est commodi itaque sed nulla accusantium alias nobis architecto ad molestias officia, ratione dolorum consequatur, perferendis tempora corrupti?</span>
-                </li>
+                <li class="amenity">                    <img src="images/icons8-toilet-room-50.png" alt="">
+                    <div class="items">
+
+                <h3 class="text-4xl">Bathroom</h3>
+                <span><ul>
+                    <li>Fresh linens and bath towels on check-in</li>
+                    <li>Shower and tub</li>
+                </ul></span>
+            </li>
+        </div>
+
+                <li class="amenity">                    
+                    <img src="images/icons8-restaurant-50.png" alt="">
+                    <div class="items">
+
+                <h3 class="text-4xl">Kitchen</h3>
+                <span><ul>
+                    <li>Gas range</li>
+                    <li>Oven</li>
+                    <li>Refrigerator + freezer</li>
+                    <li>Coffee maker</li>
+                    <li>Microwave</li>
+                        <li>Toaster</li>
+                </ul></span>
+            </li>
+        </div>
                     <li class="amenity">                    <img src="images/icons8-wi-fi-50.png" alt="">
                     <h3 class="text-4xl">Internet</h3>
                     <span><ul>
@@ -136,7 +190,7 @@
                     </ul></span>
                 </li>
                     <li class="amenity">                    <img src="images/icons8-beach-ball-50.png" alt="">
-                    <h3 class="text-4xl">Entertainment</h3>
+                    <h3 class="text-4xl">Activities</h3>
                     <span>
                         <ul>
                             <li>Cable TV</li>
@@ -158,6 +212,7 @@
                     </ul></span>
                 </li>
             </ul>
+            <section id="boringstuff">
 
             <h2 class="text-4xl">Policies</h2>
 
@@ -188,14 +243,21 @@
         <img src="images/icons8-hotel-room-key-60.png" alt="">
         
         <h3 class="text-4xl">Rates</h3>
-        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolorum, consectetur quaerat facilis totam eos ex dignissimos quas ipsa dolores. Doloribus pariatur voluptatum a tempore cumque dicta, alias similique quam.</span></li>
+        <span><ul>
+            <li>$200 reservation fee </li>
+            <li>In season $975 per week</li>
+            <li>20% discount off season</li>
+            <li>In season = June 24th - August 26th</li>
+        </ul></span></li>
         <li>
             <img src="images/icons8-beach-60.png" alt="">
             <h3 class="text-4xl">Occupancy</h3>
-            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolorum, consectetur quaerat facilis totam eos ex dignissimos quas ipsa dolores. Doloribus pariatur voluptatum a tempore cumque dicta, alias similique quam.</span></li>
-
-            </ul>
-    
+            <span>  <ul>
+                <li>Sleeps 4</li>
+                <li>Maximum 5</li>
+                <li>$50 per additional person</li>
+            </ul></span></li>
+        </section>
             <h2 class="text-4xl	">Availability</h2>
             <iframe width="402" height="346" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=A0508F4E69CB67B5%21119&authkey=%21ABARVqY5HOznPlQ&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&edrtees6=false&resen=false&ed1JS=false"></iframe>
         <script src="" async defer></script>

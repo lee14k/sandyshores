@@ -21,60 +21,86 @@
 
     </head>
     <body>
-        <section id="header">
-            <nav>
-                <ul id="navigation">
-                 <li> <a href="../index.html"> Home </a></li>
-                 <li>
-                     <div id="dropdown">
-                     Our Cottages
-                     <div id="dropdown-content">
-                        <a href="/cottages/thelodge.html">The Lodge</a>
-                        <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
-                        <a href="/cottages/cottageone.html">Cottage One</a>
-                        <a href="/cottages/cottagetwo.html">Cottage Two</a>
-                        <a href="/cottages/cottagethree.html">Cottage Three</a>
-                        <a href="/cottages/cottagefour.html">Cottage Four</a>
-                        <a href="/cottages/cottagefive.html">Cottage Five</a>
-                        <a href="/cottages/cottagesix.html">Cottage Six</a>
-                        <a href="/cottages/cottageseven.html">Cottage Seven</a>
-                        <a href="/cottages/moteleight.html">Motel Eight</a>
-                        <a href="/cottages/motelnine.html">Motel Nine</a>
-                        <a href="/cottages/motelten.html">Motel Ten</a>
+        <nav id="mainnav"role="navigation" style="background-image: url(images/IMG_1859.jpg)">
+
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+    
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <li> <a href="../index.html"> Home </a></li>
+    
+                <li> <a href="../localattractions.html">Local Attractions</li></a>
+                <li> <a href="../about.html">About</li></a>
+                <li> <a href="../reserve.html">Reserve your Stay!</li></a>
+    
+                <nav>
+                    <ul id="navigation">
+                        <li>
+                            <div id="dropdown" onclick="void(0)">
+                                Our Cottages
+                                <div id="dropdown-content">
+                                        <a href="/cottages/thelodge.html">The Lodge</a>
+                                        <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
+                                        <a href="/cottages/cottageone.html">Cottage One</a>
+                                        <a href="/cottages/cottagetwo.html">Cottage Two</a>
+                                        <a href="/cottages/cottagethree.html">Cottage Three</a>
+                                        <a href="/cottages/cottagefour.html">Cottage Four</a>
+                                        <a href="/cottages/cottagefive.html">Cottage Five</a>
+                                        <a href="/cottages/cottagesix.html">Cottage Six</a>
+                                        <a href="/cottages/cottageseven.html">Cottage Seven</a>
+                                        <a href="/cottages/moteleight.html">Motel Eight</a>
+                                        <a href="/cottages/motelnine.html">Motel Nine</a>
+                                        <a href="/cottages/motelten.html">Motel Ten</a>
+                        
+                                    </div>
         
-                    </div>
-                 </div>
-                 </li>
-                 <li> <a href="localattractions.html">Local Attractions</li></a> 
-                 <li> <a href="about.html">About</li></a> 
-                 <li> <a href="reserve.html">Reserve your Stay!</li></a> 
-                </ul>
-                         </nav>
-                         <div id="hero">
-
-
-
-
-        <h1 class="text-6xl">Cottage Three</h1>
-        <img src="images/cottageone.jpg" alt="" class="object-cover w-full h-5/6	 object-top-center">
-    </div>
+                                </div>
+                            </div>
+                        </li>
+                      
+                    </ul>
+              </ul>
+            </div>
+          </nav>
+                         
 
         <header>
-
+            <h1 class="text-6xl">Cottage Three</h1>
+   
             <p id="desc" class="text-lg break-words text-ellipsis n">
                 This cottage has two bedrooms each with a full-sized bed, living room, kitchen with refrigerator, freezer, gas range and oven, coffee maker, microwave and toaster. The living room is paneled and has a large picture window.  The bedrooms, bathroom and kitchen have recently been repainted.           </p>
 
             <ul id="top" class="text-lg">
                 <li class="item">
                     <img src="images/icons8-head-profile-50.png">
-                    4 Guests
+                    4* Guests
+                    <p class="text-sm">*sleeps up to 5, additional $50 per person</p>
                 </li>
                 <li class="item">
                     <img src="images/icons8-toilet-room-50.png" >
                     1 Bathroom</li>
                 <li class="item">
                     <img src="images/icons8-single-bed-50.png">
-                    3 Beds</li>
+                    3 Beds                    <p class="text-sm">1 queen bed + 2 full size bed</p></li>
+
                 <li class="item">
                     <img src="images/icons8-hotel-bed-50.png">
                     2 Bedrooms</li>
@@ -215,7 +241,7 @@
         Check in = 3PM
     </li>
     <li>
-        Check out = 9PM
+        Check out = 9AM
     </li>
 </ul></span></li>
 <li>
@@ -234,8 +260,10 @@
         
         <h3 class="text-4xl">Rates</h3>
         <span>    <ul>
-            <li>$200/$100 reservation fee for cottage/motel</li>
-            <li>$975 per week</li>
+            <li>$200 reservation fee</li>
+            <li>In season $975 per week</li>
+            <li>20% discount off season</li>
+            <li>In season = June 24th - August 26th</li>
         </ul></span></li>
         <li>
             <img src="images/icons8-beach-60.png" alt="">
@@ -247,6 +275,7 @@
             </ul></span></li>
 
             </ul>
+            </section>
     
             <h2 class="text-4xl	">Availability</h2>
             <iframe width="402" height="346" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=A0508F4E69CB67B5%21119&authkey=%21ABARVqY5HOznPlQ&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&edrtees6=false&resen=false&ed1JS=false"></iframe>
