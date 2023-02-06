@@ -683,12 +683,9 @@ margin-top:50px;
 }
 
 #localat {
-  height:fit-content;
-  display:flex;
-flex-direction: column;
+padding-top:250px;
 }
 
 #local {
   color:black;
-padding-bottom:300px;
 }
