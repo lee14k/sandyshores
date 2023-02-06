@@ -286,7 +286,7 @@ flex-direction: column;
   margin-bottom: 5px;
   position: relative;
   
-  background: #3a446e;
+  background: #cbd5ff;
   border-radius: 3px;
   
   z-index: 1;
@@ -380,7 +380,6 @@ flex-direction: column;
 }
 
 #mainnav {
-    background-image: url(images/IMG-3153.jpg);
 background-size:cover;
 height:600px;
 background-position-y: center;

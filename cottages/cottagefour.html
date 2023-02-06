@@ -21,45 +21,70 @@
 
     </head>
     <body>
-        <section id="header">
-            <nav>
-                <ul id="navigation">
-                 <li> <a href="../index.html"> Home </a></li>
-                 <li>
-                     <div id="dropdown">
-                     Our Cottages
-                     <div id="dropdown-content">
-                        <a href="/cottages/thelodge.html">The Lodge</a>
-                        <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
-                        <a href="/cottages/cottageone.html">Cottage One</a>
-                        <a href="/cottages/cottagetwo.html">Cottage Two</a>
-                        <a href="/cottages/cottagethree.html">Cottage Three</a>
-                        <a href="/cottages/cottagefour.html">Cottage Four</a>
-                        <a href="/cottages/cottagefive.html">Cottage Five</a>
-                        <a href="/cottages/cottagesix.html">Cottage Six</a>
-                        <a href="/cottages/cottageseven.html">Cottage Seven</a>
-                        <a href="/cottages/moteleight.html">Motel Eight</a>
-                        <a href="/cottages/motelnine.html">Motel Nine</a>
-                        <a href="/cottages/motelten.html">Motel Ten</a>
+        <nav id="mainnav"role="navigation" style="background-image: url(images/IMG-3153.jpg)">
+
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+    
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <li> <a href="../index.html"> Home </a></li>
+    
+                <li> <a href="../localattractions.html">Local Attractions</li></a>
+                <li> <a href="about.html">About</li></a>
+                <li> <a href="reserve.html">Reserve your Stay!</li></a>
+    
+                <nav>
+                    <ul id="navigation">
+                        <li>
+                            <div id="dropdown" onclick="void(0)">
+                                Our Cottages
+                                <div id="dropdown-content">
+                                        <a href="/cottages/thelodge.html">The Lodge</a>
+                                        <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
+                                        <a href="/cottages/cottageone.html">Cottage One</a>
+                                        <a href="/cottages/cottagetwo.html">Cottage Two</a>
+                                        <a href="/cottages/cottagethree.html">Cottage Three</a>
+                                        <a href="/cottages/cottagefour.html">Cottage Four</a>
+                                        <a href="/cottages/cottagefive.html">Cottage Five</a>
+                                        <a href="/cottages/cottagesix.html">Cottage Six</a>
+                                        <a href="/cottages/cottageseven.html">Cottage Seven</a>
+                                        <a href="/cottages/moteleight.html">Motel Eight</a>
+                                        <a href="/cottages/motelnine.html">Motel Nine</a>
+                                        <a href="/cottages/motelten.html">Motel Ten</a>
+                        
+                                    </div>
         
-                    </div>
-                 </div>
-                 </li>
-                 <li> <a href="localattractions.html">Local Attractions</li></a> 
-                 <li> <a href="about.html">About</li></a> 
-                 <li> <a href="reserve.html">Reserve your Stay!</li></a> 
-                </ul>
-                         </nav>
-                         <div id="hero">
-
-        <h1 class="text-6xl">Cottage Four</h1>  
-        <img src="images/cottage4.jpg" alt="" class="object-cover w-full h-5/6	 object-top-center">
-
-    </div>
+                                </div>
+                            </div>
+                        </li>
+                      
+                    </ul>
+              </ul>
+            </div>
+          </nav>
 
         <header>
+            <h1 class="text-6xl">Cottage Four</h1>  
 
-            <p>
+            <p id="desc" class="text-lg break-words text-ellipsis n">
                 This cottage is a cozy one-bedroom cottage sometimes affectionately referred to as the “Honeymoon Suite.”  It has a kitchen with gas range and oven, refrigerator, freezer, coffee maker microwave and toaster.  The bedroom was recently re-carpeted. The flooring in the kitchen / living room area is new. </p>
 
 
@@ -171,7 +196,7 @@
                         <li>
                             Carbon monoxide detectors
                         </li>
-                        <li>Regular maintennace performed</li>
+                        <li>Regular maintenance performed</li>
                     </ul></span>
                 </li>
             </ul>

@@ -21,50 +21,77 @@
 
     </head>
     <body>
-        <section id="header">
-            <nav>
-                <ul id="navigation">
-                 <li> <a href="../index.html"> Home </a></li>
-                 <li>
-                     <div id="dropdown">
-                     Our Cottages
-                     <div id="dropdown-content">
-                         <a href="thelodge.html">The Lodge</a>
-                         <a href="sunrisesuite.html">Sunrise Suite</a>
-                         <a href="cottageone.html">Cottage One</a>
-                         <a href="cottagetwo.html">Cottage Two</a>
-                         <a href="cottagethree.html">Cottage Three</a>
-                         <a href="cottagefour.html">Cottage Four</a>
-                         <a href="cottagefive.html">Cottage Five</a>
-                         <a href="cottagesix.html">Cottage Six</a>
-                         <a href="cottageseven.html">Cottage Seven</a>
-                         <a href="moteleight.html">Motel Eight</a>
-                         <a href="motelnine.html">Motel Nine</a>
-                         <a href="motelten.html">Motel Ten</a>
-         
-                     </div>
-                 </div>
-                 </li>
-                 <li> <a href="../localattractions.html">Local Attractions</li></a> 
-                 <li> <a href="../about.html">About</li></a> 
-                 <li> <a href="../reserve.html">Reserve your Stay!</li></a> 
-                </ul>
-                         </nav>
-                         <div id="hero">
-        <h1 class="text-6xl">Sunrise Suite</h1>  
-        <img src="images/sandyshoresbeach.jpg" alt="" class="object-cover w-full h-5/6	 object-top-center">
-    </div>
+        <nav id="mainnav"role="navigation" style="background-image: url(images/IMG-3153.jpg)">
+
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+    
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <li> <a href="../index.html"> Home </a></li>
+    
+                <li> <a href="../localattractions.html">Local Attractions</li></a>
+                <li> <a href="about.html">About</li></a>
+                <li> <a href="reserve.html">Reserve your Stay!</li></a>
+    
+                <nav>
+                    <ul id="navigation">
+                        <li>
+                            <div id="dropdown" onclick="void(0)">
+                                Our Cottages
+                                <div id="dropdown-content">
+                                        <a href="/cottages/thelodge.html">The Lodge</a>
+                                        <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
+                                        <a href="/cottages/cottageone.html">Cottage One</a>
+                                        <a href="/cottages/cottagetwo.html">Cottage Two</a>
+                                        <a href="/cottages/cottagethree.html">Cottage Three</a>
+                                        <a href="/cottages/cottagefour.html">Cottage Four</a>
+                                        <a href="/cottages/cottagefive.html">Cottage Five</a>
+                                        <a href="/cottages/cottagesix.html">Cottage Six</a>
+                                        <a href="/cottages/cottageseven.html">Cottage Seven</a>
+                                        <a href="/cottages/moteleight.html">Motel Eight</a>
+                                        <a href="/cottages/motelnine.html">Motel Nine</a>
+                                        <a href="/cottages/motelten.html">Motel Ten</a>
+                        
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </li>
+                      
+                    </ul>
+              </ul>
+            </div>
+          </nav>
         <header>
+            <h1 class="text-6xl">Sunset Suite</h1>
             <p id="desc" class="text-lg break-words text-ellipsis n">
-                The Sunrise Suite is a fully furnished two-bedroom home with a full kitchen including refrigerator, freezer, gas range and oven, microwave, coffee maker and toaster. The living room has newer carpet and a new futon – 2018. It also has a remodeled bathroom and new kitchen floor – 2017.  Enjoy the stunning view of the beach and lake from the master bedroom window. The second bedroom is at the opposite end of the mobile home.            </p>
+                The Sunrise Suite is a fully furnished two-bedroom home with a full kitchen including refrigerator, freezer, gas range and oven, microwave, coffee maker and toaster. The living room has newer carpet and a new futon. It also has a remodeled bathroom and new kitchen floor.  Enjoy the stunning view of the beach and lake from the master bedroom window. The second bedroom is at the opposite end of the mobile home.            </p>
 
        
 
             <ul id="top" class="text-lg">
                 <li class="item">
                     <img src="images/icons8-head-profile-50.png">
-                    5 Guests
-                </li>
+                    5* Guests
+                    <p class="text-sm">*sleeps up to 6, additional $50 per person</p>                </li>
                 <li class="item">
                     <img src="images/icons8-toilet-room-50.png" >
                     1 Bathroom</li>
@@ -168,7 +195,7 @@
                         <li>
                             Carbon monoxide detectors
                         </li>
-                        <li>Regular maintennace performed</li>
+                        <li>Regular maintenance performed</li>
                     </ul></span>
                 </li>
             </ul>
@@ -187,7 +214,7 @@
                                     Check in = 3PM
                                 </li>
                                 <li>
-                                    Check out = 9PM
+                                    Check out = 9AM
                                 </li>
                             </ul>
                         </span></li>
