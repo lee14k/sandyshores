@@ -162,7 +162,6 @@ width:70%;
   #formwrapper {
     display:flex;
     justify-content: center;
-    flex-direction: column;
   }
 
   #menuToggle
@@ -317,10 +316,7 @@ width:70%;
 
 }
 
-#about {
-    padding-left:20px;
-    padding-top:20px;
-}
+
 
 form {
     gap:10px;
@@ -332,7 +328,22 @@ form {
     background-color:#64b3f4;
 }
 
-p {
+#formtext {
     margin-top:-200px !important;
+
+}
+
+#booknow{
+    font-family: 'Work Sans';
+    font-weight:900;
+    font-size: 20px;
+    height:100px;
+    width:100px;
+    border-radius: 20px;
+    border: solid white;
+    background:transparent;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
 }
