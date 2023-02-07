@@ -155,13 +155,15 @@ padding-bottom:0px;
 form {
     display:flex !important;
     flex-direction: column  !important;
-width:70%;
     border:solid red;
+
   }
 
   #formwrapper {
     display:flex;
     justify-content: center;
+    align-items: center;
+
   }
 
   #menuToggle
@@ -321,6 +323,7 @@ width:70%;
 form {
     gap:10px;
     border:solid #000000;
+    padding-left:160px;
 }
 
 #reserve {
@@ -337,13 +340,22 @@ form {
     font-family: 'Work Sans';
     font-weight:900;
     font-size: 20px;
-    height:100px;
-    width:100px;
+    height:65px;
+    width:300px;
     border-radius: 20px;
     border: solid white;
     background:transparent;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center!important;
+    border:solid rgb(16, 27, 87);
+    background-color: #64b3f4;
+    color:white;
 
+
+}
+
+input {
+    border:solid rgb(207, 248, 253);
+    width:50%;
 }
