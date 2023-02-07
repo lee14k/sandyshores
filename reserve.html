@@ -12,56 +12,109 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="about.css">
         <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Pacifico&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
 
     </head>
     <body>
-        <nav>
-            <ul id="navigation">
-             <li> <a href="index.html"> Home </a></li>
-             <li>
-                 <div id="dropdown">
-                 Our Cottages
-                 <div id="dropdown-content">
-                    <a href="/cottages/thelodge.html">The Lodge</a>
-                    <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
-                    <a href="/cottages/cottageone.html">Cottage One</a>
-                    <a href="/cottages/cottagetwo.html">Cottage Two</a>
-                    <a href="/cottages/cottagethree.html">Cottage Three</a>
-                    <a href="/cottages/cottagefour.html">Cottage Four</a>
-                    <a href="/cottages/cottagefive.html">Cottage Five</a>
-                    <a href="/cottages/cottagesix.html">Cottage Six</a>
-                    <a href="/cottages/cottageseven.html">Cottage Seven</a>
-                    <a href="/cottages/moteleight.html">Motel Eight</a>
-                    <a href="/cottages/motelnine.html">Motel Nine</a>
-                    <a href="/cottages/motelten.html">Motel Ten</a>
-    
-                </div>
-             </div>
-             </li>
-             <li> <a href="localattractions.html">Local Attractions</li></a> 
-             <li> <a href="about.html">About</li></a> 
-             <li> <a href="reserve.html">Reserve your Stay!</li></a> 
-            </ul>
-                     </nav>
-        <h1>Reserve Your Stay!</h1>
-        <section id="aboutwrapper">
-     <form action="submit">
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
+        <h1 id="reserve" class="text-6xl">Reserve Your Stay!</h1>
 
-        <input type="text" placeholder="Phone Number">
-
-        <input type="text" placeholder="Check In">
-        <input type="text" placeholder="Check Out">
-
-        <input type="text" placeholder="First choice of cottage/motel">
-        <input type="text" placeholder="Second choice of cottage/motelFirst Name">
-        <input type="text" placeholder="Questions/Comments/Special Requests">
+        <nav role="navigation" id="navme">
         
-        <button>Request your Stay!</button>
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <li> <a href="../index.html"> Home </a></li>
+
+            <li> <a href="../localattractions.html">Local Attractions</li></a>
+            <li> <a href="about.html">About</li></a>
+            <li> <a href="reserve.html">Reserve your Stay!</li></a>
+            <nav>
+                <ul id="navigation">
+                    <li>
+                        <div id="dropdown" onclick="void(0)">
+                            Our Cottages
+                            <div id="dropdown-content">
+                                    <a href="/cottages/thelodge.html">The Lodge</a>
+                                    <a href="/cottages/sunrisesuite.html">Sunrise Suite</a>
+                                    <a href="/cottages/cottageone.html">Cottage One</a>
+                                    <a href="/cottages/cottagetwo.html">Cottage Two</a>
+                                    <a href="/cottages/cottagethree.html">Cottage Three</a>
+                                    <a href="/cottages/cottagefour.html">Cottage Four</a>
+                                    <a href="/cottages/cottagefive.html">Cottage Five</a>
+                                    <a href="/cottages/cottagesix.html">Cottage Six</a>
+                                    <a href="/cottages/cottageseven.html">Cottage Seven</a>
+                                    <a href="/cottages/moteleight.html">Motel Eight</a>
+                                    <a href="/cottages/motelnine.html">Motel Nine</a>
+                                    <a href="/cottages/motelten.html">Motel Ten</a>
+                    
+                                </div>
+    
+                            </div>
+                        </div>
+                    </li>
+                  
+                </ul>
+          </ul>
+        </div>
+      </nav>
+
+       
+        </nav>
+        
+<div id="formwrapper">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem enim voluptatem aliquid inventore, praesentium cum vitae cumque voluptas iusto sint, possimus ullam? Mollitia vel, assumenda optio adipisci porro unde. Enim.</p>
+</div>
+
+        <section id="formwrapper">
+
+     <form action="https://kwesforms.com/api/foreign/forms/6vOon1b8eoPvClji7d4N" class="kwes-form">
+        <h2 class="">Name</h2>
+        <input type="text" placeholder="Name" name="name">
+        <h2>Phone #</h2>
+
+        <input type="text" placeholder="Phone Number" name="phone">
+        <h2>Check In</h2>
+
+        <input type="text" placeholder="Check In" name="in">
+        <h2>Check Out</h2>
+
+        <input type="text" placeholder="Check Out" name="out">
+        <h2>First choice of cottage/motel</h2>
+
+        <input type="text" placeholder="First choice of cottage/motel" name="first">
+        <h2>Second choice of cottage/motel</h2>
+
+        <input type="text" placeholder="Second choice of cottage"
+         name="second">
+  
+        
+        <button type="submit">Request your Stay!</button>
      </form>
     </section>
-
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
         <script src="" async defer></script>
     </body>
 </html>
