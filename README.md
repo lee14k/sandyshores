@@ -1,0 +1,1 @@
+This is the final draft of the first version of a website I made for a business that rents out cottages for the summer. Done in HTML, CSS, and very minimal vanilla Javascript, I found it difficult to maintain. This later became the motivator for me to retool the entire website using NextJS.
